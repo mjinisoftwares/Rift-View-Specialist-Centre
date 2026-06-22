@@ -11,25 +11,62 @@ const partners = [
     url: "https://sha.go.ke",
   },
  {
-    name: "SHA",
-    logo: "/sha-logo.webp",
-    url: "https://sha.go.ke",
+    name: "Jubilee Insurance",
+    logo: "/images/jubilee.svg",
+    url: "https://jubileeinsurance.com/ke/",
   },
    {
-    name: "SHA",
-    logo: "/sha-logo.webp",
-    url: "https://sha.go.ke",
+    name: "Madison Insurance ",
+    logo: "/images/madison-insurance-seeklogo.svg",
+    url: "https://www.madison.co.ke/home/",
   },
   {
-    name: "SHA",
-    logo: "/sha-logo.webp",
-    url: "https://sha.go.ke",
+    name: "Minet Kenya Insurance",
+    logo: "/images/Minet-Logo-2.png",
+    url: "https://www.minet.com/kenya/",
   },
   {
-    name: "SHA",
-    logo: "/sha-logo.webp",
-    url: "https://sha.go.ke",
+    name: "APA Insurance ",
+    logo: "/images/APA.png",
+    url: "https://www.apainsurance.org/",
   },
+  {
+    name: "Britam Insurance",
+    logo: "/images/BRITAM.png",
+    url: "https://www.britam.com/kenya/",
+  },
+  {
+    name: "CIC Insurance ",
+    logo: "/images/CIC.png",
+    url: "https://ke.cicinsurancegroup.com/",
+  },
+
+  {
+    name: "GA Insurance",
+    logo: "/images/GA insurance.png",
+    url: "https://www.gainsuranceltd.com/ke/",
+  },
+  {
+    name: "Heritage Insurance",
+    logo: "/images/Heritage.png",
+    url: "https://online.heritageinsurance.co.ke/eInsurance/",
+  },
+  {
+    name: "Cigna Insurance",
+    logo: "/images/Cigna.png",
+    url: "https://www.cigna.com/",
+  },
+  {
+    name: "LIASON Insurance",
+    logo: "/images/LIASON.png",
+    url: "https://www.liaisongroup.net/",
+  },
+  {
+    name: "Old Mutual",
+    logo: "/images/old mutual.png",
+    url: "https://www.oldmutual.co.ke/",
+  },
+
 ];
 
 export default function PartnersSection() {
@@ -80,7 +117,7 @@ export default function PartnersSection() {
                 rel="noopener noreferrer"
                 className="group flex min-w-55 items-center justify-center rounded-2xl border bg-background p-6 shadow-sm transition-all hover:shadow-lg"
               >
-                <div className="relative h-16 w-40">
+                <div className="relative h-20 w-40">
                   <Image
                     src={partner.logo}
                     alt={partner.name}

@@ -38,7 +38,7 @@ Our dedicated team physicians, nurses, and staff are your partners in health, al
 look forward to many years of serving our community."</p>
 
                                 <div className="mt-6 space-y-3">
-                                    <cite className="block font-semibold text-xl">Dr.Jonah Manjari</cite>
+                                    <cite className="block font-semibold text-  xl">Dr.Jonah Manjari</cite>
                                     <p>Chief Executive Officer, Rift View Specialist Centre</p>
                                 
                                 </div>

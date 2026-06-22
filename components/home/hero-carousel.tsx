@@ -5,9 +5,6 @@ import { useCallback, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { CtaButton } from '@/components/cta-button'
-import { Button } from '@base-ui/react'
-import Link from 'next/link'
-import { buttonVariants } from '../ui/button'
 
 const slides = [
   {
@@ -60,7 +57,7 @@ export function HeroCarousel() {
   return (
     <section className="relative overflow-hidden bg-background min-h-[80vh]">
       <div
-        className="pointer-events-none absolute right-0 top-0 size-[34rem] translate-x-1/3 -translate-y-1/3 rounded-full bg-[--color-brand-sky]/10"
+        className="pointer-events-none absolute right-0 top-0 size-136 translate-x-1/3 -translate-y-1/3 rounded-full bg-[--color-brand-sky]/10"
         aria-hidden="true"
       />
       <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 md:px-12 py-12 lg:grid-cols-2 text-center lg:text-left">

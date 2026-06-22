@@ -58,7 +58,7 @@ export function WhyChoose() {
       <div className="mx-auto grid max-w-7xl items-start gap-12 px-6 md:px-12 lg:grid-cols-2 mt-12">
         <Reveal direction="right">
           <div className="relative">
-            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-xl">
+            <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-xl">
               <Image
                 src="/images/medical-team.png"
                 alt="The RiftView medical team"
