@@ -3,56 +3,68 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'motion/react'
-import { ChevronRight, Calendar, Phone } from 'lucide-react'
-import { CtaBand } from './cta-band'
+import { ChevronRight } from 'lucide-react'
 import { CtaButton } from './cta-button'
+
+interface PageHeroProps {
+  eyebrow: string
+  title: string
+  subtitle?: string
+  imageSrc?: string
+  imageAlt?: string
+  breadcrumb: {
+    label: string
+    href?: string
+  }[]
+}
 
 export function PageHero({
   title,
   subtitle,
   breadcrumb,
-}: {
-  title: string
-  subtitle?: string
-  breadcrumb: { label: string; href?: string }[]
-}) {
+  imageSrc = '/images/riftview-hero.jpg',
+  imageAlt = 'RiftView Specialist Centre',
+}: PageHeroProps) {
   return (
     <section className="relative overflow-hidden border-b border-border bg-secondary/10">
-      {/* Background Decorations */}
+      {/* Background Effects */}
       <div
-        className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[--color-brand-sky]/10 blur-3xl"
+        className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-primary/10 blur-3xl"
         aria-hidden="true"
       />
       <div
-        className="pointer-events-none absolute -bottom-24 left-10 h-72 w-72 rounded-full bg-[--color-brand-green]/10 blur-3xl"
+        className="absolute -bottom-24 left-0 h-80 w-80 rounded-full bg-accent/10 blur-3xl"
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-12 ">
+      <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-12 lg:py-24">
         <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Left Content */}
+          {/* Content */}
           <div>
             <motion.nav
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              aria-label="Breadcrumb"
               className="mb-6 flex flex-wrap items-center gap-2 text-sm text-muted-foreground"
             >
-              {breadcrumb.map((b, i) => (
-                <span key={b.label} className="flex items-center gap-2">
-                  {i > 0 && <ChevronRight className="size-3" />}
+              <Link href="/" className="hover:text-primary">
+                Home
+              </Link>
 
-                  {b.href ? (
+              {breadcrumb.map((item, index) => (
+                <span key={index} className="flex items-center gap-2">
+                  <ChevronRight className="size-3" />
+
+                  {item.href ? (
                     <Link
-                      href={b.href}
-                      className="transition-colors hover:text-primary"
+                      href={item.href}
+                      className="hover:text-primary"
                     >
-                      {b.label}
+                      {item.label}
                     </Link>
                   ) : (
                     <span className="font-medium text-primary">
-                      {b.label}
+                      {item.label}
                     </span>
                   )}
                 </span>
@@ -60,17 +72,17 @@ export function PageHero({
             </motion.nav>
 
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="max-w-3xl text-4xl font-bold tracking-tight text-primary md:text-5xl lg:text-6xl"
+              className="text-balance text-4xl font-bold text-primary md:text-5xl lg:text-6xl"
             >
               {title}
             </motion.h1>
 
             {subtitle && (
               <motion.p
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.15 }}
                 className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground"
@@ -79,49 +91,47 @@ export function PageHero({
               </motion.p>
             )}
 
-            {/* CTA Buttons */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
               className="mt-8 flex flex-wrap gap-4"
             >
-                 
-            <CtaButton href="/services" size="md" variant="primary">
-              Our Services
-            </CtaButton>
-            <CtaButton href="/about" size="md" variant="accent">
-              Learn More
-            </CtaButton>
-      
+              <CtaButton href="/appointments" size="md" variant='secondary'>
+                Book Appointment
+              </CtaButton>
+
+              <CtaButton
+                href="/about"
+                size="md"
+                variant="accent"
+              >
+                Learn About Us
+              </CtaButton>
             </motion.div>
           </div>
 
-          {/* Right Image */}
+          {/* Image */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <div className="overflow-hidden rounded-3xl shadow-2xl">
+            {/* Decorative Ring */}
+            <div className="absolute inset-0 scale-110 rounded-full bg-primary/5 blur-2xl" />
+
+            <div className="relative overflow-hidden rounded-2xl border-4 border-secondary/70 shadow-2xl md:h-[420px] md:w-full ">
               <Image
-                src="/images/riftview-hero.jpg"
-                alt="Rift View Specialist Centre"
-                width={600}
-                height={400}
+                src={imageSrc}
+                alt={imageAlt}
+                fill
                 priority
-                className="h-75 w-full object-cover md:h-112.5"
+                className="object-cover"
               />
             </div>
 
-            {/* Floating Card */}
-            <div className="absolute -bottom-6 left-6 rounded-2xl border bg-background p-5 shadow-xl">
-              <p className="text-3xl font-bold text-primary">10+</p>
-              <p className="text-sm text-muted-foreground">
-                Specialized Departments
-              </p>
-            </div>
+           
           </motion.div>
         </div>
       </div>

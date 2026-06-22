@@ -89,7 +89,7 @@ export function HeroCarousel() {
               Our Services
             </CtaButton>
             <CtaButton href="/about" size="md" variant="accent">
-              Learn More
+            About Us
             </CtaButton>
           </div>
 

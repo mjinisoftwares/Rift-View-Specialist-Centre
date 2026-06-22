@@ -16,8 +16,9 @@ export default function SpecialistsPage() {
       <PageHero
         eyebrow="Our Specialists"
         title="Meet Our Expert Doctors"
-        description="Our consultants bring years of experience and a genuine commitment to compassionate, patient-centred care across every department."
+        subtitle="Our consultants bring years of experience and a genuine commitment to compassionate, patient-centred care across every department."
         breadcrumb={[{ label: 'Specialists' }]}
+        imageSrc='/images/doctor-male-2.png'
       />
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
