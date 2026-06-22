@@ -49,8 +49,8 @@ export default async function ServiceDetailPage({
 
   return (
     <>
-      <section className="border-b border-border bg-secondary/40">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <section className="border-b border-border bg-secondary/10">
+        <div className="mx-auto max-w-7xl px-4 md:px-12 py-12 sm:px-6 md:py-16 ">
           <nav className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">
             <Link href="/" className="hover:text-primary">
               Home
@@ -78,9 +78,9 @@ export default async function ServiceDetailPage({
                   {service.description}
                 </p>
                 <div className="mt-8 flex flex-wrap gap-3">
-                  <CtaButton href="/appointments">Book Appointment</CtaButton>
-                  <CtaButton href="/contact" variant="outline">
-                    Contact Us
+                  <CtaButton href="/appointments" variant='secondary'>Book Appointment</CtaButton>
+                  <CtaButton href="/services" variant="outline">
+                   All Services <ArrowRight className='size-4 ml-2' />
                   </CtaButton>
                 </div>
               </div>
