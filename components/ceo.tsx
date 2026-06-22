@@ -15,11 +15,11 @@ export default function CEOSetion() {
                     <div className="relative mb-6 sm:mb-0">
                         <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl ">
                             <Image
-                                src="/payments.png"
-                                className="hidden rounded-[15px] dark:block"
-                                alt="payments illustration dark"
-                                width={1207}
-                                height={929}
+                                src="/images/doctor-male-2.png"
+                                className="rounded-[15px]"
+                                alt="doctor-male-2"
+                                width={600}
+                                height={450}
                             />
                            
                         </div>
@@ -28,13 +28,14 @@ export default function CEOSetion() {
                     <div className="relative space-y-4">
                   
                         <div className="pt-8">
-                            <blockquote className="border-l-4 pl-8 border-accent">
-                                <p className='font-md text-primary/80'>"Dear Community Members and Patients,
+                            <blockquote className="border-l-4 md:pl-16 border-accent">
+                                <p className='font-md text-primary/80 text-lg'>"Dear Community Members and Patients,
 Welcome to Rift View Specialist Centre! Our mission is clear:
-compassionate, high-quality care that puts you first. <br/>
+compassionate, high-quality care that puts you first. </p>
+<p className='font-md text-primary/80 mt-8'>
 We build a healing environment of trust, expertise, and empathy.
 Our dedicated team physicians, nurses, and staff are your partners in health, always advancing with the latest medical technologies to deliver unparalleled care.
- <br/> Thank you for entrusting us with your well-being. Together, we
+ </p><p className='font-md text-primary/80 mt-8'>Thank you for entrusting us with your well-being. Together, we
 look forward to many years of serving our community."</p>
 
                                 <div className="mt-6 space-y-3">

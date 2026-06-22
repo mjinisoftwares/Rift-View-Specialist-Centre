@@ -77,8 +77,8 @@ export function SiteHeader() {
       {/* Main nav */}
       <div
         className={cn(
-          'border-b border-border/60 bg-background/95 backdrop-blur transition-shadow',
-          scrolled && 'shadow-md',
+          'border-b border-border/60 bg-background/95 backdrop-blur transition-shadow shadow-sm',
+          scrolled && 'shadow-lg',
         )}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12 py-1.5">

@@ -19,7 +19,7 @@ export function ServicesPreview() {
           ))}
         </StaggerGroup>
         <div className="mt-12 flex justify-center">
-          <CtaButton href="/services" variant="primary" size="lg">
+          <CtaButton href="/services" variant="secondary" size="lg">
             View All Services
           </CtaButton>
         </div>

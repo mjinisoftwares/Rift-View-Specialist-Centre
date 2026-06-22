@@ -60,7 +60,7 @@ export function WhyChoose() {
           <div className="relative">
             <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-xl">
               <Image
-                src="/images/medical-team.png"
+                src="/images/xray.webp"
                 alt="The RiftView medical team"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

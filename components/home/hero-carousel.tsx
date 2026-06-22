@@ -8,32 +8,32 @@ import { CtaButton } from '@/components/cta-button'
 
 const slides = [
   {
-    image: '/images/hero-doctor-xray.png',
-    alt: 'Doctor examining a chest X-ray',
+    image: '/images/riftview-1.webp',
+    alt: 'Rift View Specialist Center Building in Naivasha',
     titleLead: 'Specialist',
     titleAccent: 'Healthcare',
-    titleTail: 'in Naivasha, Nakuru County',
+    titleTail: 'in Naivasha',
     text: "At Rift View Specialist Centre, we deliver comprehensive and compassionate care for cancer patients. Our multidisciplinary team creates personalized, holistic treatment plans to meet each patient&rsquo;s unique needs.",
   },
   {
-    image: '/images/consultation.png',
-    alt: 'Doctor consulting a patient',
+    image: '/images/riftview-3.webp',
+    alt: 'Outreach Program treating community members in Naivasha',
     titleLead: 'Compassionate',
     titleAccent: 'Care',
-    titleTail: 'for the whole family',
+    titleTail: 'for the Whole Community',
     text: 'From paediatrics to chronic disease management, our experienced consultants put your wellbeing at the heart of everything we do.',
   },
   {
-    image: '/images/medical-team.png',
-    alt: 'Team of medical professionals',
+    image: '/images/riftview-4.webp',
+    alt: 'Rift View Specialist Center - Reception',
     titleLead: 'Expert',
     titleAccent: 'Specialists',
     titleTail: 'you can trust',
     text: 'A multidisciplinary team of over 40 specialists working together to provide world-class healthcare close to home.',
   },
   {
-    image: '/images/lab-equipment.png',
-    alt: 'Modern laboratory equipment',
+    image: '/images/xray.webp',
+    alt: 'Doctor examining X-ray results',
     titleLead: 'Advanced',
     titleAccent: 'Diagnostics',
     titleTail: 'for accurate results',
@@ -85,7 +85,7 @@ export function HeroCarousel() {
           </AnimatePresence>
 
           <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">          
-            <CtaButton href="/services" size="md" variant="primary">
+            <CtaButton href="/services" size="md" variant="secondary">
               Our Services
             </CtaButton>
             <CtaButton href="/about" size="md" variant="accent">
