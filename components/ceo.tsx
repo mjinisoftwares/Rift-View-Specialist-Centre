@@ -13,16 +13,16 @@ export default function CEOSetion() {
                        />
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
                     <div className="relative mb-6 sm:mb-0">
-                        <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl ">
-                            <Image
-                                src="/images/doctor-male-2.png"
-                                className="rounded-[15px]"
-                                alt="doctor-male-2"
-                                width={600}
-                                height={450}
-                            />
-                           
-                        </div>
+                       <div className="relative mx-auto h-100 w-100 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-2 shadow-2xl">
+  <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-secondary bg-white">
+    <Image
+      src="/images/doctor-male-2.png"
+      alt="Doctor at RiftView Specialist Center"
+      fill
+      className="object-cover"
+    />
+  </div>
+</div>
                     </div>
 
                     <div className="relative space-y-4">

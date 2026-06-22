@@ -58,15 +58,18 @@ export function WhyChoose() {
       <div className="mx-auto grid max-w-7xl items-start gap-12 px-6 md:px-12 lg:grid-cols-2 mt-12">
         <Reveal direction="right">
           <div className="relative">
-            <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-xl">
-              <Image
-                src="/images/xray.webp"
-                alt="The RiftView medical team"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover border-accent border-2 "
-              />
-            </div>
+            <div className="relative mx-auto h-72 w-72 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-2 shadow-2xl md:h-[420px] md:w-[420px]">
+  <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-white bg-white">
+    <Image
+      src="/images/xray.webp"
+      alt="The RiftView medical team"
+      fill
+      sizes="(max-width: 768px) 288px, 420px"
+      className="object-cover"
+      priority
+    />
+  </div>
+</div>
             {/* <div className="absolute -bottom-6 -right-2 hidden rounded-2xl bg-accent px-6 py-5 text-white shadow-lg sm:block">
               <p className="font-heading text-5xl font-extrabold text-center">15+</p>
               <p className="text-sm font-medium text-white/90 text-center">
