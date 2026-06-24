@@ -17,13 +17,13 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-     <PageHero
-  title="Comprehensive Specialist Care"
-  subtitle="From everyday consultations to advanced specialist treatment, our multidisciplinary team delivers complete medical care under one roof in Naivasha."
-  breadcrumb={[{ label: 'Services' }]}
-  imageSrc="/images/riftview-1.webp"
-  imageAlt="RiftView Specialist Centre Services"
-/>
+      <PageHero
+        eyebrow='Medical Services'
+        title="Comprehensive Specialist Care"
+        subtitle="From everyday consultations to advanced specialist treatment, our multidisciplinary team delivers complete medical care under one roof in Naivasha."
+        breadcrumb={[{ label: 'Services' }]}
+        imageSrc="/images/xray.webp"
+      />
 
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

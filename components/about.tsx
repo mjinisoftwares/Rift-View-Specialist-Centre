@@ -78,9 +78,7 @@ const About3 = ({ className }: AboutProps) => {
             </div>
             <h2 className="text-3xl font-semibold">Our Mission</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To deliver compassionate, comprehensive, and patient-centered
-              healthcare with a commitment to clinical excellence, innovation,
-              and community health.
+              To deliver compassionate, patient-centered healthcare with a commitment to clinical excellence, innovation, and holistic well-being.
             </p>
           </div>
 
@@ -90,9 +88,7 @@ const About3 = ({ className }: AboutProps) => {
             </div>
             <h2 className="text-3xl font-semibold">Our Vision</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              To be the trusted leader in healthcare, recognized for our innovative
-              treatments, outstanding patient outcomes, and unwavering dedication
-              to the well-being of our community.
+              To be a trusted leader in healthcare — recognized for innovation, outstanding patient outcomes, and an unwavering commitment to community well-being.
             </p>
           </div>
         </div>

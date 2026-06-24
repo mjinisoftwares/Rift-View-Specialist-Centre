@@ -17,9 +17,17 @@ import {
   Wind,
   Droplet,
   Flame,
+  Users,
+  Microscope,
+  Syringe,
+  Ribbon,
+  Pill,
+  Plane,
+  Accessibility,
+  ShieldCheck,
   type LucideIcon,
 } from 'lucide-react'
-import type { SVGProps } from 'react'
+import React, { type SVGProps } from 'react'
 
 const Facebook = (props: SVGProps<SVGSVGElement>) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -64,9 +72,17 @@ export const iconMap: Record<string, LucideIcon> = {
   Wind,
   Droplet,
   Flame,
+  Users,
+  Microscope,
+  Syringe,
+  Ribbon,
+  Pill,
+  Plane,
+  Accessibility,
+  ShieldCheck,
 }
 
-const socialMap: Record<string, (props: SVGProps<SVGSVGElement>) => JSX.Element> =
+const socialMap: Record<string, (props: SVGProps<SVGSVGElement>) => React.JSX.Element> =
   {
     Facebook,
     Twitter,

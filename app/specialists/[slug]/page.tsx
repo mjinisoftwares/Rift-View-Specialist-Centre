@@ -212,8 +212,7 @@ export default async function SpecialistDetailPage({
                 </h2>
                 <p className="mt-3 text-muted-foreground">
                   Book an appointment with {specialist.name} at RiftView
-                  Specialist Centre. We are located on Moi South Lake Road,
-                  Naivasha.
+                  Specialist Centre. We are located at {site.address}.
                 </p>
 
                 <Separator className="my-8" />

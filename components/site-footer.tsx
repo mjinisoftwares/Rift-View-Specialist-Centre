@@ -14,7 +14,7 @@ export function SiteFooter() {
             <Logo />
           </div>
           <p className="mt-4 text-sm leading-relaxed text-primary-foreground/80">
-            Comprehensive specialist healthcare in Naivasha, Nakuru County —
+            Comprehensive specialist healthcare in Naivasha, Nakuru County,
             combining advanced technology with compassionate care.
           </p>
           <div className="mt-5 flex gap-2">
@@ -101,6 +101,11 @@ export function SiteFooter() {
           <p>{site.tagline}</p>
         </div>
       </div>
+      {/* built by MjiniDigital */}
+      <div className='text-center text-xs text-primary-foreground/70 py-2'>
+        <p className='text-xs'>Built by <a href="https://mjidigital.co.ke" target="_blank" className='text-primary-foreground hover:text-[--color-brand-green] transition-colors duration-300 ease-in-out'>Mjini Digital</a></p>
+      </div>
+      
     </footer>
   )
 }

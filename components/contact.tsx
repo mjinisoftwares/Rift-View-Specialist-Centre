@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { SectionHeading } from './section-heading'
+import { site } from '@/lib/data'
 
 export default function Contact() {
   return (
@@ -30,7 +31,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className='text-sm font-medium'>Email</h4>
-                    <p className='text-muted-foreground text-xs'>hello@company.com</p>
+                    <p className='text-muted-foreground text-xs'>
+                      <a href={`mailto:${site.email}`} className="hover:text-primary transition-colors">{site.email}</a>
+                    </p>
                   </div>
                 </div>
 
@@ -40,7 +43,9 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className='text-sm font-medium'>Phone</h4>
-                    <p className='text-muted-foreground text-xs'>+1 (555) 123-4567</p>
+                    <p className='text-muted-foreground text-xs'>
+                      <a href={`tel:${site.phone.replace(/\s/g, '')}`} className="hover:text-primary transition-colors">{site.phone}</a>
+                    </p>
                   </div>
                 </div>
 
@@ -50,10 +55,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h4 className='text-sm font-medium'>Office</h4>
-                    <p className='text-muted-foreground text-xs'>
-                      123 Business Ave, Suite 100
-                      <br />
-                      San Francisco, CA 94105
+                    <p className='text-muted-foreground text-xs whitespace-pre-line'>
+                      {site.address}
                     </p>
                   </div>
                 </div>
@@ -67,18 +70,12 @@ export default function Contact() {
               </CardHeader>
               <CardContent className='px-6'>
                 <div className='flex flex-col gap-2 text-sm'>
-                  <div className='flex justify-between'>
-                    <span>Monday - Friday</span>
-                    <span className='text-muted-foreground'>9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className='flex justify-between'>
-                    <span>Saturday</span>
-                    <span className='text-muted-foreground'>10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className='flex justify-between'>
-                    <span>Sunday</span>
-                    <span className='text-muted-foreground'>Closed</span>
-                  </div>
+                  {site.hours.map((h) => (
+                    <div key={h.day} className='flex justify-between'>
+                      <span>{h.day}</span>
+                      <span className='text-muted-foreground'>{h.time}</span>
+                    </div>
+                  ))}
                 </div>
               </CardContent>
             </Card>
@@ -92,10 +89,12 @@ export default function Contact() {
                 <p className='text-muted-foreground mb-3 text-sm'>
                   Speak directly with our team for immediate assistance.
                 </p>
-                <Button variant='outline' className="h-12 px-6 py-4 w-full rounded-full cursor-pointer">
-                  <Phone />
-                  Schedule a Call
-                </Button>
+                <a href={`tel:${site.phone.replace(/\s/g, '')}`} className="block w-full">
+                  <Button variant='outline' className="h-12 px-6 py-4 w-full rounded-full cursor-pointer">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Call {site.phone}
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>

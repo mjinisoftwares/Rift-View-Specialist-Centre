@@ -32,15 +32,16 @@ export default function CEOSetion() {
                                 <p className='font-md text-primary/80 text-lg'>"Dear Community Members and Patients,
 Welcome to Rift View Specialist Centre! Our mission is clear:
 compassionate, high-quality care that puts you first. </p>
-<p className='font-md text-primary/80 mt-8'>
+<p className='font-md text-primary/80 mt-8 text-lg'>
 We build a healing environment of trust, expertise, and empathy.
 Our dedicated team physicians, nurses, and staff are your partners in health, always advancing with the latest medical technologies to deliver unparalleled care.
- </p><p className='font-md text-primary/80 mt-8'>Thank you for entrusting us with your well-being. Together, we
+ </p><p className='font-md text-primary/80 mt-8 text-lg'>Thank you for entrusting us with your well-being. Together, we
 look forward to many years of serving our community."</p>
 
                                 <div className="mt-6 space-y-3">
-                                    <cite className="block font-semibold text-  xl">Dr.Jonah Manjari</cite>
-                                    <p>Chief Executive Officer, Rift View Specialist Centre</p>
+                                    <cite className="block font-semibold text-xl">Daniel Somba</cite>
+                                    <p className='text-lg font-medium text-secondary'>Chairman</p>
+                                     <p className='italic font-medium text-primary'>Riftview Specialist Centre, Naivasha</p>
                                 
                                 </div>
                             </blockquote>

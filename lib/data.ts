@@ -3,10 +3,10 @@ export const site = {
   shortName: 'RiftView',
   tagline: 'Care • Compassion • Commitment',
   location: 'Naivasha, Nakuru County, Kenya',
-  email: 'info@riftviewspecialist.co.ke',
-  phone: '+254 700 000 000',
-  emergencyPhone: '+254 711 111 111',
-  address: 'Moi South Lake Road, Naivasha, Nakuru County, Kenya',
+  email: 'Riftview.Specialistcentre@gmail.com',
+  phone: '0719 225227',
+  emergencyPhone: '0719 225227',
+  address: 'Opp. DRIC, Along Kenyatta Avenue, Naivasha Town',
   hours: [
     { day: 'Mon – Fri', time: '7:30 AM – 8:00 PM' },
     { day: 'Saturday', time: '8:00 AM – 6:00 PM' },
@@ -28,64 +28,6 @@ export const stats = [
   { label: 'Satisfaction Rate', value: 98, suffix: '%' },
 ]
 
-export type Service = {
-  slug: string
-  title: string
-  category: string
-  icon: string
-  excerpt: string
-  description: string
-  highlights: string[]
-  conditions: string[]
-  image: string
-}
-
-export const serviceCategories = [
-'All',
-
-  // General Clinical Services
-  'Family Medicine',
-  'Outpatient Clinics',
-
-  // Diagnostics
-  'Advanced Diagnostic Imaging',
-  'Comprehensive Laboratory Testing',
-
-  // Specialist Clinics
-  'ENT, Head & Neck Surgery',
-  'Audiology & Hearing Care',
-  'Ophthalmology',
-  'Dental & Oral Health',
-  'Dermatology',
-
-  // Surgical Services
-  'General Surgery',
-  'Orthopaedic Surgery',
-  'Trauma & Fracture Care',
-  'Spine Surgery',
-  'Joint Replacement Surgery',
-
-  // Women & Children
-  'Paediatrics',
-  'Obstetrics & Gynaecology',
-  'Family Planning',
-
-  // Specialty Care
-  'Cancer Care',
-  'Endocrinology',
-  'Diabetes Management',
-
-  // Support Services
-  'Physiotherapy & Rehabilitation',
-  'Pharmacy Services',
-
-  // Preventive Care
-  'Travel Vaccination Clinic',
-]
-
-
-
-
 export type Specialist = {
   slug: string
   name: string
@@ -101,45 +43,17 @@ export type Specialist = {
 
 export const specialistDepartments = [
   'All',
-
-  // General Clinical Services
-  'Family Medicine',
-  'Outpatient Clinics',
-
-  // Diagnostics
-  'Advanced Diagnostic Imaging',
-  'Comprehensive Laboratory Testing',
-
-  // Specialist Clinics
-  'ENT, Head & Neck Surgery',
-  'Audiology & Hearing Care',
-  'Ophthalmology',
-  'Dental & Oral Health',
-  'Dermatology',
-
-  // Surgical Services
-  'General Surgery',
-  'Orthopaedic Surgery',
-  'Trauma & Fracture Care',
-  'Spine Surgery',
-  'Joint Replacement Surgery',
-
-  // Women & Children
-  'Paediatrics',
-  'Obstetrics & Gynaecology',
-  'Family Planning',
-
-  // Specialty Care
-  'Cancer Care',
-  'Endocrinology',
-  'Diabetes Management',
-
-  // Support Services
-  'Physiotherapy & Rehabilitation',
-  'Pharmacy Services',
-
-  // Preventive Care
-  'Travel Vaccination Clinic',
+  'OutPatient Department (OPD)',
+  'Diagnostic Department',
+  'Ophthalmology (Eye Care) Department',
+  'Dental Unit',
+  'ENT and Audiology Department',
+  'Orthopedics and Physiotherapy Department',
+  'Obstetrics, Gynecology & Family Planning Department',
+  'Pediatrics & Immunizations',
+  'Family Medicine Department & Travel Vaccines department',
+  'Oncology Department',
+  'Pharmacy Department',
 ]
 
 export const specialists: Specialist[] = [
@@ -147,9 +61,9 @@ export const specialists: Specialist[] = [
     slug: 'dr-amina-wanjiru',
     name: 'Dr. Amina Wanjiru',
     title: 'Consultant Cardiologist',
-    department: 'Cardiology',
+    department: 'OutPatient Department (OPD)',
     image: '/images/doctor-female-1.png',
-    bio: 'Dr. Wanjiru is a dedicated cardiologist with a passion for preventive heart care and patient education. She leads our cardiac clinic with warmth and precision.',
+    bio: 'Dr. Wanjiru is a dedicated cardiologist with a passion for preventive heart care and patient education. She leads our cardiac consultations with warmth and precision.',
     experience: '12 years',
     education: [
       'MBChB, University of Nairobi',
@@ -163,7 +77,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-david-otieno',
     name: 'Dr. David Otieno',
     title: 'Consultant General Surgeon',
-    department: 'Surgery',
+    department: 'OutPatient Department (OPD)',
     image: '/images/doctor-male-1.png',
     bio: 'Dr. Otieno specialises in minimally invasive surgery, bringing skill and compassion to every procedure for faster recovery and better outcomes.',
     experience: '15 years',
@@ -179,7 +93,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-grace-mutiso',
     name: 'Dr. Grace Mutiso',
     title: 'Consultant Paediatrician',
-    department: 'Paediatrics',
+    department: 'Pediatrics & Immunizations',
     image: '/images/doctor-female-2.png',
     bio: 'Dr. Mutiso is beloved by families across Naivasha for her gentle approach to children and her commitment to early, preventive care.',
     experience: '10 years',
@@ -191,7 +105,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-samuel-kiprono',
     name: 'Dr. Samuel Kiprono',
     title: 'Consultant Physician',
-    department: 'Internal Medicine',
+    department: 'Family Medicine Department & Travel Vaccines department',
     image: '/images/doctor-male-2.png',
     bio: 'Dr. Kiprono brings decades of experience in internal medicine, managing complex chronic conditions with a holistic, patient-centred approach.',
     experience: '20 years',
@@ -203,7 +117,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-faith-njoroge',
     name: 'Dr. Faith Njoroge',
     title: 'Consultant Obstetrician & Gynaecologist',
-    department: "Women's Health",
+    department: 'Obstetrics, Gynecology & Family Planning Department',
     image: '/images/doctor-female-1.png',
     bio: 'Dr. Njoroge provides comprehensive care for women, guiding mothers safely through pregnancy and supporting lifelong reproductive health.',
     experience: '14 years',
@@ -215,7 +129,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-peter-mwangi',
     name: 'Dr. Peter Mwangi',
     title: 'Consultant Orthopaedic Surgeon',
-    department: 'Surgery',
+    department: 'Orthopedics and Physiotherapy Department',
     image: '/images/doctor-male-1.png',
     bio: 'Dr. Mwangi helps patients regain mobility through expert management of bone, joint and sports injuries.',
     experience: '11 years',
@@ -227,7 +141,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-mary-chebet',
     name: 'Dr. Mary Chebet',
     title: 'Consultant Dermatologist',
-    department: 'Internal Medicine',
+    department: 'OutPatient Department (OPD)',
     image: '/images/doctor-female-2.png',
     bio: 'Dr. Chebet combines medical and aesthetic dermatology to help patients achieve healthy, confident skin.',
     experience: '9 years',
@@ -239,7 +153,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-james-kamau',
     name: 'Dr. James Kamau',
     title: 'Consultant Radiologist',
-    department: 'Diagnostics',
+    department: 'Diagnostic Department',
     image: '/images/doctor-male-2.png',
     bio: 'Dr. Kamau leads our imaging department, delivering accurate diagnoses that guide effective treatment across the centre.',
     experience: '16 years',
@@ -251,7 +165,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-lucy-akinyi',
     name: 'Dr. Lucy Akinyi',
     title: 'Consultant Ophthalmologist',
-    department: 'Internal Medicine',
+    department: 'Ophthalmology (Eye Care) Department',
     image: '/images/doctor-female-1.png',
     bio: 'Dr. Akinyi is dedicated to protecting and restoring vision, offering compassionate eye care to patients of all ages.',
     experience: '13 years',
@@ -263,7 +177,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-brian-wekesa',
     name: 'Dr. Brian Wekesa',
     title: 'Consultant ENT Surgeon',
-    department: 'Surgery',
+    department: 'ENT and Audiology Department',
     image: '/images/doctor-male-1.png',
     bio: 'Dr. Wekesa treats ear, nose and throat conditions with precision, improving hearing, breathing and quality of life.',
     experience: '8 years',
@@ -275,7 +189,7 @@ export const specialists: Specialist[] = [
     slug: 'dr-esther-naserian',
     name: 'Dr. Esther Naserian',
     title: 'Clinical Psychologist',
-    department: 'Internal Medicine',
+    department: 'OutPatient Department (OPD)',
     image: '/images/doctor-female-2.png',
     bio: 'Dr. Naserian provides confidential counselling and psychological support, helping patients build resilience and emotional wellbeing.',
     experience: '10 years',
@@ -287,13 +201,68 @@ export const specialists: Specialist[] = [
     slug: 'dr-john-mburu',
     name: 'Dr. John Mburu',
     title: 'Emergency Medicine Physician',
-    department: 'Internal Medicine',
+    department: 'OutPatient Department (OPD)',
     image: '/images/doctor-male-2.png',
     bio: 'Dr. Mburu leads our 24-hour emergency team, providing rapid, life-saving care when it matters most.',
     experience: '12 years',
     education: ['MBChB, Kenyatta University', 'Diploma in Emergency Medicine'],
     languages: ['English', 'Swahili', 'Kikuyu'],
     specialties: ['Trauma care', 'Critical care', 'Resuscitation'],
+  },
+  {
+    slug: 'dr-jane-karimi',
+    name: 'Dr. Jane Karimi',
+    title: 'Consultant Dentist',
+    department: 'Dental Unit',
+    image: '/images/doctor-female-1.png',
+    bio: 'Dr. Karimi is dedicated to providing gentle and restorative dental care, helping patients restore confidence in their smiles with advanced techniques.',
+    experience: '10 years',
+    education: ['BDS, University of Nairobi', 'MSc in Restorative Dentistry'],
+    languages: ['English', 'Swahili'],
+    specialties: ['Root Canal Therapy', 'Cosmetic Dentistry', 'Crowns & Bridges'],
+  },
+  {
+    slug: 'dr-patrick-omwamba',
+    name: 'Dr. Patrick Omwamba',
+    title: 'Consultant Oncologist',
+    department: 'Oncology Department',
+    image: '/images/doctor-male-1.png',
+    bio: 'Dr. Omwamba brings deep clinical oncology expertise and compassionate guidance, specializing in targeted chemotherapy and immunotherapy plans.',
+    experience: '14 years',
+    education: [
+      'MBChB, University of Nairobi',
+      'MMed Radiation Oncology',
+      'Fellowship in Medical Oncology',
+    ],
+    languages: ['English', 'Swahili'],
+    specialties: ['Chemotherapy', 'Immunotherapy', 'Targeted Cancer Care'],
+  },
+  {
+    slug: 'dr-sarah-jemutai',
+    name: 'Dr. Sarah Jemutai',
+    title: 'Clinical Pharmacist',
+    department: 'Pharmacy Department',
+    image: '/images/doctor-female-2.png',
+    bio: 'Dr. Jemutai manages our pharmacy services with a focus on medication safety, clinical efficacy, and patient-centered drug therapy counseling.',
+    experience: '8 years',
+    education: ['BPharm, Moi University', 'MSc in Clinical Pharmacy'],
+    languages: ['English', 'Swahili'],
+    specialties: ['Medication Safety', 'Drug Therapy Counseling', 'Clinical Pharmacy'],
+  },
+  {
+    slug: 'dr-moses-ochieng',
+    name: 'Dr. Moses Ochieng',
+    title: 'Lead Physiotherapist',
+    department: 'Orthopedics and Physiotherapy Department',
+    image: '/images/doctor-male-2.png',
+    bio: 'Dr. Ochieng leads our physical rehabilitation unit, designing personalized therapy plans that support long-term recovery and restore functional mobility.',
+    experience: '11 years',
+    education: [
+      'BSc in Physiotherapy, Kenya Medical Training College',
+      'MSc in Sports Physiotherapy',
+    ],
+    languages: ['English', 'Swahili'],
+    specialties: ['Sports Injury Rehab', 'Post-Surgical Rehab', 'Manual Pain Therapy'],
   },
 ]
 
@@ -324,7 +293,7 @@ export const testimonials: Testimonial[] = [
     location: 'Nakuru',
     rating: 5,
     quote:
-      'My daughter received wonderful paediatric care. Dr. Mutiso is patient and gentle — exactly what every parent hopes for.',
+      'My daughter received wonderful paediatric care. The pediatric team is patient and gentle — exactly what every parent hopes for.',
   },
   {
     name: 'Samuel Macharia',

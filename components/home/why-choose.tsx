@@ -15,34 +15,29 @@ import { motion } from 'motion/react'
 
 const reasons = [
   {
+    icon: HeartHandshake,
+    title: 'Elegant, Patient-Centered Facility',
+    text: 'Designed with comfort and calm in mind, every detail of our centre promotes healing and peace of mind.',
+  },
+  {
     icon: ShieldCheck,
-    title: 'Trusted Expertise',
-    text: 'Board-certified specialists with years of experience across disciplines.',
-  },
-  {
-    icon: Clock,
-    title: '24/7 Emergency Care',
-    text: 'Round-the-clock emergency response and critical care services.',
-  },
-  {
-    icon: Microscope,
-    title: 'Advanced Technology',
-    text: 'Modern diagnostic and treatment equipment for accurate care.',
+    title: 'Comprehensive Care Under One Roof',
+    text: 'From diagnostics to specialized treatment and rehabilitation, we offer a full spectrum of services in one location.',
   },
   {
     icon: Users,
-    title: 'Patient-Centred',
-    text: 'Personalised treatment plans built around your individual needs.',
+    title: 'Highly Experienced Professionals',
+    text: 'Our team of specialists, nurses, and support staff are not only experts in their fields but also compassionate partners in your journey to wellness.',
   },
   {
-    icon: HeartHandshake,
-    title: 'Compassionate Team',
-    text: 'Caring staff who treat every patient with dignity and respect.',
+    icon: Microscope,
+    title: 'Cutting-Edge Technology',
+    text: 'We invest in advanced medical equipment and modern practices to deliver precision, safety, and outstanding outcomes.',
   },
   {
-    icon: BadgeCheck,
-    title: 'Affordable Care',
-    text: 'Quality healthcare with transparent, fair pricing for all.',
+    icon: Clock,
+    title: 'Seamless Patient Journey',
+    text: 'From the moment you book your appointment to recovery and follow-up, we ensure your experience is smooth, coordinated, and stress-free.',
   },
 ]
 

@@ -15,563 +15,425 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: 'family-medicine',
-    title: 'Family Medicine',
-    category: 'Medical',
-    icon: 'Users',
-    excerpt:
-      'Comprehensive healthcare services for individuals and families at every stage of life.',
-
-    description:
-      'The Family Medicine Department at RiftView Specialist Center serves as the first point of contact for patients seeking high-quality healthcare. Our experienced physicians provide preventive care, diagnosis and treatment of acute illnesses, chronic disease management, health education, and wellness consultations. We focus on building long-term relationships with our patients, helping individuals and families maintain optimal health through personalized treatment plans, routine screenings, and proactive disease prevention strategies.',
-
+    slug: 'outpatient-department',
+    title: 'OutPatient Department (OPD)',
+    category: 'Clinical',
+    icon: 'Activity',
+    excerpt: 'The heart of Rift View Specialist Centre — where your journey to better health begins with seamless, efficient, and personalized consultations.',
+    description: "The OutPatient Department (OPD) is the heart of Rift View Specialist Centre — where your journey to better health begins. Our OPD is designed to offer seamless, efficient, and personalized care in a serene and welcoming environment. Whether you need a routine check-up, specialist consultation, or preventive health review, our dedicated team ensures every visit is convenient and reassuring. With online appointment booking, digital health records, and telemedicine services, we bring modern healthcare closer to you — making it easy to access the right care, at the right time.",
     highlights: [
       {
-        title: 'Preventive Health Screenings',
-        content:
-          'Our preventive health screening programs are designed to detect medical conditions before symptoms become severe. Through comprehensive evaluations, laboratory testing, blood pressure monitoring, diabetes screening, cholesterol assessments, and cancer risk evaluations, we help patients identify potential health concerns early. Early detection significantly improves treatment outcomes and allows patients to take proactive steps toward maintaining long-term health and wellness.',
+        title: 'Specialist & General Consultations',
+        content: 'From general practitioners to leading specialists, we provide expert consultations tailored to your unique needs. Each session is thorough, respectful, and focused on your complete well-being.'
       },
       {
-        title: 'Routine Medical Check-Ups',
-        content:
-          'Regular medical examinations play a critical role in maintaining overall health. Our physicians conduct detailed health assessments, review medical history, evaluate lifestyle factors, and provide recommendations tailored to each patient. These routine visits help monitor health trends, identify emerging concerns, and ensure patients remain on track toward achieving their personal health goals.',
+        title: 'Preventive Health Check-Ups',
+        content: 'Prevention is the foundation of wellness. Our preventive packages include screenings and lifestyle guidance that help detect conditions early and keep you in optimal health.'
       },
       {
         title: 'Chronic Disease Management',
-        content:
-          'We provide comprehensive care for patients living with chronic illnesses such as hypertension, diabetes, asthma, heart disease, and other long-term conditions. Our team develops individualized treatment plans that combine medication management, lifestyle counseling, regular monitoring, and patient education. This integrated approach helps patients achieve better disease control and improve their quality of life.',
+        content: 'For conditions such as diabetes, hypertension, and asthma, we offer structured care programs that emphasize consistency, monitoring, and long-term health.'
       },
       {
-        title: 'Health Education & Lifestyle Counselling',
-        content:
-          'Patient education is a cornerstone of quality healthcare. Our healthcare providers offer guidance on nutrition, physical activity, weight management, smoking cessation, stress reduction, and disease prevention. By empowering patients with accurate information and practical strategies, we help individuals make informed decisions that support healthier lifestyles and long-term wellbeing.',
-      },
+        title: 'Digital Health & Telemedicine',
+        content: 'We integrate technology for your convenience — with digital medical records for continuity of care and teleconsultations that connect you with your doctor from anywhere.'
+      }
     ],
-
     conditions: [
-      'Hypertension',
-      'Diabetes',
-      'Asthma',
-      'Heart Disease',
-      'Common Infections',
-      'High Cholesterol',
+      'General Wellness',
+      'Chronic Conditions',
+      'Acute Illnesses',
+      'Routine Checkups',
+      'Lifestyle-Related Diseases'
     ],
-
-    image: '/images/services/family-medicine.webp',
+    image: '/images/services/family-medicine.webp'
   },
-
   {
-    slug: 'paediatrics',
-    title: 'Paediatrics',
-    category: 'Women & Children',
-    icon: 'Baby',
-
-    excerpt:
-      'Specialized healthcare services focused on the growth, development, and wellbeing of children.',
-
-    description:
-      'Our Paediatrics Department provides compassionate and comprehensive healthcare for newborns, infants, children, and adolescents. We are dedicated to supporting healthy growth and development while offering expert diagnosis, treatment, and prevention of childhood illnesses. Our child-friendly environment ensures that young patients receive high-quality medical care in a safe, supportive, and comfortable setting.',
-
+    slug: 'diagnostic-department',
+    title: 'Diagnostic Department',
+    category: 'Diagnostics',
+    icon: 'ScanLine',
+    excerpt: 'Accurate diagnosis combining advanced medical imaging, laboratory testing, and specialist interpretation.',
+    description: "Accurate diagnosis is the cornerstone of effective treatment. Our Diagnostic Services department combines advanced imaging, laboratory testing, and specialist expertise to deliver precise results you can trust. With cutting-edge equipment and highly trained professionals, we ensure clarity and confidence in every diagnosis.",
     highlights: [
       {
-        title: 'Child Immunization Programs',
-        content:
-          'Vaccination remains one of the most effective ways to protect children from serious infectious diseases. Our immunization services follow national and international guidelines to ensure children receive recommended vaccines on schedule. We educate parents about vaccine safety and importance while helping protect communities through disease prevention.',
+        title: 'Medical Imaging',
+        content: 'From X-rays and ultrasounds to advanced CT and MRI scans, our imaging services provide detailed insights into your health. Each test is performed in a safe, comfortable setting, and results are interpreted by expert radiologists.'
+      },
+      {
+        title: 'Mammography',
+        content: 'Early detection saves lives. Our mammography services provide clear, detailed breast imaging for screening and diagnosis, with the utmost sensitivity and care.'
+      },
+      {
+        title: 'Cardiac & Neurological Testing',
+        content: 'We offer electrocardiograms (ECG) for heart function assessment and electroencephalograms (EEG) for neurological evaluation, helping detect conditions early.'
+      },
+      {
+        title: 'Comprehensive Laboratory Services',
+        content: 'Our laboratory covers everything from routine blood work to advanced pathology tests. Each result is processed with precision, accuracy, and speed, ensuring your doctor has the answers needed for timely treatment.'
+      }
+    ],
+    conditions: [
+      'Internal Trauma',
+      'Tumors and Lesions',
+      'Cardiac Arrhythmias',
+      'Neurological Disorders',
+      'Infections and Pathology'
+    ],
+    image: '/images/xray.webp'
+  },
+  {
+    slug: 'ophthalmology',
+    title: 'Ophthalmology (Eye Care) Department',
+    category: 'Specialist Clinics',
+    icon: 'Eye',
+    excerpt: 'Complete eye care ranging from routine vision tests and prescriptions to advanced microsurgeries.',
+    description: "Your eyes are one of your most precious assets. At Rift View Specialist Centre, our Ophthalmology Department provides complete eye care, blending expertise with compassion. From simple vision checks to complex surgical procedures, our team ensures every patient receives world-class care in a reassuring environment.",
+    highlights: [
+      {
+        title: 'Comprehensive Eye Examinations',
+        content: 'We conduct thorough eye exams that go beyond vision testing, assessing overall eye health to detect issues early.'
+      },
+      {
+        title: 'Refraction & Prescription Services',
+        content: 'Accurate prescriptions tailored to your lifestyle ensure clear and comfortable vision, whether for glasses or contact lenses.'
+      },
+      {
+        title: 'Eye Pressure & Glaucoma Screening',
+        content: 'We provide detailed pressure checks and screening programs to detect glaucoma at an early stage, safeguarding your vision.'
+      },
+      {
+        title: 'Fundoscopy & Retinal Evaluation',
+        content: 'Our specialists use advanced equipment to examine the retina, detecting and managing conditions like diabetic retinopathy.'
+      },
+      {
+        title: 'Eye Surgeries (Cataract, Glaucoma, Retinal, LASIK)',
+        content: 'From cataract removal to laser vision correction, we provide surgical solutions with precision, safety, and excellent outcomes.'
+      },
+      {
+        title: 'Pediatric & Geriatric Eye Care',
+        content: 'Children and seniors require specialized attention — and our team provides age-appropriate care for lifelong eye health.'
+      }
+    ],
+    conditions: [
+      'Cataracts',
+      'Glaucoma',
+      'Myopia/Presbyopia',
+      'Diabetic Retinopathy',
+      'Dry Eye Syndrome',
+      'Macular Degeneration'
+    ],
+    image: '/images/services/imaging.webp'
+  },
+  {
+    slug: 'dental-unit',
+    title: 'Dental Unit',
+    category: 'Specialist Clinics',
+    icon: 'Smile',
+    excerpt: 'Restoring confidence, comfort, and radiant smiles through gentle, high-quality, and comprehensive dental care.',
+    description: "At Rift View Specialist Centre, our Dental Unit is designed to deliver more than just treatment — it's about restoring confidence, comfort, and radiant smiles in an elegant and reassuring environment. Whether you're visiting for a routine check-up or a complex oral procedure, our team of highly trained dentists, specialists, and dental assistants ensures that every experience is gentle, personalized, and stress-free. We combine advanced technology with a compassionate approach, so patients leave not only healthier, but also with renewed confidence in their smile.",
+    highlights: [
+      {
+        title: 'Preventive Care & Check-Ups',
+        content: 'We believe prevention is the foundation of lifelong oral health. Regular dental check-ups allow us to detect and address issues early, provide professional cleanings, and give you the guidance needed to maintain a healthy smile at home.'
+      },
+      {
+        title: 'Fillings, Crowns, and Bridges',
+        content: 'For patients with tooth decay or damage, we offer aesthetic restorations that blend seamlessly with your natural teeth. Our crowns and bridges are custom designed for strength, durability, and elegance, restoring both function and appearance.'
+      },
+      {
+        title: 'Root Canal Therapy',
+        content: 'When tooth pain or infection threatens your natural teeth, our root canal treatments provide relief and protection. Performed with precision and care, this service preserves your tooth while eliminating discomfort.'
+      },
+      {
+        title: 'Orthodontics (Braces & Aligners)',
+        content: 'Straight, well-aligned teeth aren\'t just about beauty — they improve oral health too. We provide traditional braces and modern clear aligners to suit lifestyle preferences, ensuring results that are both functional and aesthetic.'
+      },
+      {
+        title: 'Cosmetic Dentistry',
+        content: 'Your smile is one of your most powerful assets. We offer safe teeth-whitening treatments and complete smile makeover plans, tailored to help you achieve a naturally beautiful, confident smile.'
+      },
+      {
+        title: 'Oral & Maxillofacial Surgery',
+        content: 'Our surgical team manages complex oral conditions, from wisdom tooth removal to corrective jaw surgery. Every procedure is carried out in a safe, sterile, and supportive environment, with patient comfort at the forefront.'
+      },
+      {
+        title: 'Pediatric Dentistry',
+        content: 'Children deserve special attention in oral care. Our pediatric dentists use gentle techniques to make dental visits fun and stress-free while building habits that ensure lifelong oral health.'
+      }
+    ],
+    conditions: [
+      'Tooth Decay & Cavities',
+      'Gum Disease (Periodontitis)',
+      'Tooth Pain & Infections',
+      'Crooked & Crowded Teeth',
+      'Impacted Wisdom Teeth',
+      'Stained or Discolored Teeth'
+    ],
+    image: '/images/services/family-medicine.webp'
+  },
+  {
+    slug: 'ent-audiology',
+    title: 'ENT and Audiology Department',
+    category: 'Specialist Clinics',
+    icon: 'Ear',
+    excerpt: 'Comprehensive care for ear, nose, throat, head and neck conditions, plus complete hearing and balance services.',
+    description: "Our ENT and Audiology Department provides comprehensive care for conditions affecting the ears, nose, throat, and head and neck region. From simple infections to complex surgeries, patients receive specialized treatment in a comfortable, supportive environment. Our audiology services further enhance quality of life, offering solutions for hearing and balance disorders.",
+    highlights: [
+      {
+        title: 'ENT Consultations & Treatments',
+        content: 'Specialist evaluation and management of infections, allergies, breathing difficulties, and throat conditions.'
+      },
+      {
+        title: 'Allergy Testing & Treatment',
+        content: 'Personalized assessments and therapies for sinus, respiratory, and seasonal allergies, aimed at restoring comfort and wellness.'
+      },
+      {
+        title: 'Tonsil & Adenoid Care',
+        content: 'We provide surgical and non-surgical treatments for children and adults experiencing recurrent throat or breathing problems.'
+      },
+      {
+        title: 'Head & Neck Surgery',
+        content: 'For complex conditions such as tumors, growths, or trauma, we provide expert surgical interventions with precision and care.'
+      },
+      {
+        title: 'Audiology & Hearing Care',
+        content: 'We offer hearing tests, balance disorder assessments, and customized hearing aid fittings to restore sound and confidence.'
+      }
+    ],
+    conditions: [
+      'Otitis Media & Ear Infections',
+      'Sinusitis & Nasal Polyps',
+      'Tonsillitis & Adenoiditis',
+      'Hearing Loss',
+      'Vertigo & Balance Issues',
+      'Vocal Cord Disorders'
+    ],
+    image: '/images/services/family-medicine.webp'
+  },
+  {
+    slug: 'orthopedics-physiotherapy',
+    title: 'Orthopedics and Physiotherapy Department',
+    category: 'Surgical Services',
+    icon: 'Bone',
+    excerpt: 'Musculoskeletal care delivering modern fracture care, joint replacement, spine surgery, and personalized rehabilitation.',
+    description: "Our Orthopedics and Physiotherapy Department is dedicated to helping patients regain movement, reduce pain, and restore independence. With state-of-the-art surgical techniques and personalized rehabilitation programs, we provide holistic musculoskeletal care.",
+    highlights: [
+      {
+        title: 'Fracture Care & Trauma Surgery',
+        content: 'From emergency fracture repair to complex trauma cases, our surgeons provide swift, effective solutions.'
+      },
+      {
+        title: 'Joint Replacement Surgery',
+        content: 'Specialized hip, knee, and shoulder replacements restore mobility and significantly improve quality of life.'
+      },
+      {
+        title: 'Sports Injury Management',
+        content: 'We provide comprehensive treatment and rehabilitation for athletes and active individuals.'
+      },
+      {
+        title: 'Spine Care',
+        content: 'Expert diagnosis and treatment of spinal conditions, from back pain to complex spinal surgeries.'
+      },
+      {
+        title: 'Physiotherapy & Rehabilitation',
+        content: 'Personalized therapy plans, including manual techniques, exercises, and pain management, designed to support long-term recovery.'
+      }
+    ],
+    conditions: [
+      'Bone Fractures & Dislocations',
+      'Osteoarthritis & Rheumatoid Arthritis',
+      'Ligament and Tendon Tears',
+      'Chronic Back and Neck Pain',
+      'Scoliosis & Spinal Stenosis',
+      'Post-Surgical Stiffness'
+    ],
+    image: '/images/services/orthopaedics.webp'
+  },
+  {
+    slug: 'obstetrics-gynecology-family-planning',
+    title: 'Obstetrics, Gynecology & Family Planning Department',
+    category: 'Women & Children',
+    icon: 'HeartPulse',
+    excerpt: 'Dedicated to women\'s health at every milestone, offering prenatal, maternity, postnatal, and family planning care.',
+    description: "As a facility, we understand that women's health is unique and ever-changing — requiring care that is not only clinical but also deeply personal. Our Obstetrics and Gynecology Department is dedicated to walking with women through every stage of life, from adolescence to motherhood, menopause, and beyond. Here, patients are welcomed into a private, elegant, and supportive environment where dignity, comfort, and trust come first. Every consultation is designed to be respectful and reassuring, every treatment plan personalized, and every procedure carried out with precision and compassion.",
+    highlights: [
+      {
+        title: 'Prenatal & Antenatal Care',
+        content: 'We believe pregnancy should be a joyful and well-supported journey. Our antenatal programs include regular check-ups, ultrasounds, nutrition counseling, and monitoring of both mother and baby — ensuring safe, confident progress through every trimester.'
+      },
+      {
+        title: 'Labor & Delivery',
+        content: 'Our modern labor and delivery suites are designed with both medical excellence and motherly comfort in mind. Skilled obstetricians and midwives ensure a safe delivery, while compassionate support creates a calming, memorable experience for families welcoming new life.'
+      },
+      {
+        title: 'Postnatal Care',
+        content: 'The journey doesn\'t end at birth. We support mothers as they recover physically and emotionally after delivery, offering wound care, breastfeeding support, emotional wellness checks, and guidance on newborn care in a warm and family-friendly setting.'
+      }
+    ],
+    conditions: [
+      'Pregnancy & High-Risk Obstetrics',
+      'Uterine Fibroids & Ovarian Cysts',
+      'Endometriosis',
+      'Infertility & Reproductive Concerns',
+      'Menopausal & Hormonal Shifts',
+      'Cervical Dysplasia'
+    ],
+    image: '/images/services/obgyn.webp'
+  },
+  {
+    slug: 'pediatrics-immunizations',
+    title: 'Pediatrics & Immunizations',
+    category: 'Women & Children',
+    icon: 'Baby',
+    excerpt: 'Compassionate, child-friendly care for babies, children, and adolescents, including developmental screening and vaccines.',
+    description: "At our facility, we believe children deserve healthcare that is as gentle as it is skilled and experienced. Our Pediatrics Department is dedicated to nurturing the health of infants, children, and adolescents in an environment designed to make them feel safe, cared for, and understood. Parents can trust that their little ones are in the hands of specialists who combine clinical expertise with patience, empathy, and a child-friendly approach. From routine check-ups and immunizations to treatment of complex conditions, we walk alongside families every step of the way — ensuring every child grows in health, confidence, and happiness.",
+    highlights: [
+      {
+        title: 'Well-Baby & Newborn Clinics',
+        content: 'Our specialized clinics focus on early development, offering physical exams, growth monitoring, feeding guidance, and parental counseling to ensure newborns thrive from the very beginning.'
       },
       {
         title: 'Growth & Development Monitoring',
-        content:
-          'We carefully monitor physical growth, developmental milestones, nutritional status, and behavioral progress throughout childhood. Regular assessments help identify developmental delays or health concerns early, allowing for timely intervention and support when needed.',
+        content: 'We provide regular assessments to track a child\'s physical, emotional, and cognitive development — catching any concerns early and guiding families with supportive care plans.'
       },
       {
-        title: 'Diagnosis & Treatment of Childhood Illnesses',
-        content:
-          'Our pediatric specialists provide expert care for a wide range of childhood illnesses including respiratory infections, allergies, asthma, digestive disorders, skin conditions, and infectious diseases. We focus on accurate diagnosis, effective treatment, and family-centered care.',
+        title: 'Immunizations & Vaccinations',
+        content: 'Protecting children against preventable diseases is central to our mission. We offer the full schedule of childhood vaccinations in a calm, supportive environment where parents and children feel at ease.'
       },
       {
-        title: 'Parent Education & Support',
-        content:
-          'Parents play a vital role in a child’s health and development. Our team provides practical guidance on nutrition, growth, behavior management, disease prevention, and overall child wellness, empowering families to make informed healthcare decisions.',
+        title: 'Pediatric Emergency Care',
+        content: 'From sudden fevers to acute injuries, our pediatric specialists respond quickly, providing immediate, compassionate care that reassures both children and parents.'
       },
+      {
+        title: 'Chronic Disease Management',
+        content: 'For children with asthma, diabetes, or congenital disorders, we provide structured long-term care with personalized treatment plans and regular monitoring.'
+      },
+      {
+        title: 'Pediatric Nutrition Counseling',
+        content: 'Good nutrition fuels healthy growth. We provide guidance on balanced diets, feeding practices, and nutritional solutions tailored to each child\'s needs.'
+      }
     ],
-
     conditions: [
-      'Childhood Infections',
-      'Asthma',
-      'Allergies',
-      'Nutritional Disorders',
-      'Developmental Delays',
-      'Respiratory Conditions',
+      'Neonatal Conditions',
+      'Childhood Infectious Diseases',
+      'Pediatric Asthma & Allergies',
+      'Nutritional Deficiencies',
+      'Growth Delays',
+      'Pediatric Trauma & Injuries'
     ],
-
-    image: '/images/services/paediatrics.webp',
+    image: '/images/services/paediatrics.webp'
   },
-
   {
-    slug: 'obstetrics-gynaecology',
-    title: 'Obstetrics & Gynaecology',
-    category: 'Women & Children',
-    icon: 'HeartPulse',
-
-    excerpt:
-      'Comprehensive women’s healthcare services covering reproductive, maternal, and gynecological health.',
-
-    description:
-      'Our Obstetrics and Gynaecology Department provides specialized healthcare services for women at every stage of life. From adolescence and reproductive health to pregnancy, childbirth, and menopause, our experienced specialists deliver compassionate and personalized care. We are committed to supporting women’s health through preventive screenings, family planning services, maternity care, and advanced gynecological treatment.',
-
+    slug: 'family-medicine-travel-vaccines',
+    title: 'Family Medicine & Travel Vaccines',
+    category: 'Clinical',
+    icon: 'Plane',
+    excerpt: 'Comprehensive medical care for all ages with specialized travel health, vaccination, and preventative services.',
+    description: "Health is a journey — and our Family Medicine Department is here to guide you and your loved ones every step of the way. Providing continuous, comprehensive care for all ages, this department emphasizes prevention, wellness, and holistic treatment in an environment where patients feel respected, supported, and known personally. Whether managing chronic illnesses, scheduling regular check-ups, or preparing for international travel, our family medicine specialists ensure you receive consistent, compassionate care that puts your well-being first.",
     highlights: [
       {
-        title: 'Antenatal & Prenatal Care',
-        content:
-          'Our antenatal services ensure both mother and baby receive comprehensive care throughout pregnancy. Regular check-ups, ultrasound monitoring, nutritional guidance, and risk assessments help promote healthy pregnancies and positive birth outcomes.',
+        title: 'General Family Care',
+        content: 'We offer broad-spectrum medical care for individuals and families — addressing everyday health concerns with efficiency and warmth, while building long-term patient-doctor relationships.'
       },
       {
-        title: 'Family Planning Services',
-        content:
-          'We offer confidential counseling and a wide range of family planning options to help individuals and couples make informed reproductive health decisions that align with their personal goals and circumstances.',
+        title: 'Chronic Condition Management',
+        content: 'Conditions such as diabetes, hypertension, and asthma require consistent follow-up. We provide structured programs with ongoing monitoring, medication management, and lifestyle support to promote stability and long-term health.'
       },
       {
-        title: 'Women’s Health Screenings',
-        content:
-          'Routine screenings play a critical role in early detection and prevention of gynecological conditions. We provide cervical cancer screening, breast health evaluations, reproductive health assessments, and preventive care services.',
+        title: 'Preventive Wellness Programs',
+        content: 'Our preventive care packages include screenings, lifestyle assessments, and wellness coaching — helping families maintain optimal health and detect issues before they become serious.'
       },
       {
-        title: 'Postnatal Care & Recovery',
-        content:
-          'Following childbirth, our specialists provide comprehensive support to help mothers recover safely, monitor newborn health, and address physical, emotional, and nutritional needs during the postpartum period.',
+        title: 'Pre-Travel Health Consultations',
+        content: 'Before your journey, our specialists assess your destination-specific health risks and prepare you with the necessary precautions for safe and confident travel.'
       },
+      {
+        title: 'Travel Vaccinations',
+        content: 'We provide the full range of required and recommended travel vaccines — including yellow fever, hepatitis, and typhoid — administered by trained professionals in a safe and comfortable setting.'
+      },
+      {
+        title: 'Preventive Medications & Advice',
+        content: 'Our team offers additional preventive measures such as malaria prophylaxis and high-altitude care, ensuring you\'re fully prepared wherever your travels may take you.'
+      }
     ],
-
     conditions: [
-      'Pregnancy Care',
-      'Fibroids',
-      'Menstrual Disorders',
-      'Infertility',
-      'Menopause Management',
-      'Cervical Health Concerns',
+      'Hypertension & Diabetes',
+      'Common Respiratory Infections',
+      'Sinusitis & Seasonal Allergies',
+      'Yellow Fever & Travel Risks',
+      'Malaria Exposure',
+      'Gastrointestinal Infections'
     ],
-
-    image: '/images/services/obgyn.webp',
+    image: '/images/services/family-medicine.webp'
   },
- 
   {
-  slug: 'general-surgery',
-  title: 'General Surgery',
-  category: 'Surgical',
-  icon: 'Scissors',
-
-  excerpt:
-    'Advanced surgical care delivered by experienced surgeons using modern techniques and evidence-based practices.',
-
-  description:
-    'The General Surgery Department at RiftView Specialist Center provides comprehensive surgical care for a wide range of conditions affecting the digestive system, soft tissues, abdominal organs, and other body systems. Our highly skilled surgeons utilize modern surgical techniques, including minimally invasive procedures, to ensure safe operations, reduced recovery times, and optimal patient outcomes. From elective surgeries to emergency interventions, we deliver personalized surgical care supported by advanced diagnostics and post-operative rehabilitation services.',
-
-  highlights: [
-    {
-      title: 'Minimally Invasive Surgery',
-      content:
-        'Our surgeons perform laparoscopic and minimally invasive procedures that reduce surgical trauma, minimize scarring, shorten hospital stays, and accelerate recovery while maintaining excellent clinical outcomes.',
-    },
-    {
-      title: 'Emergency & Trauma Surgery',
-      content:
-        'We provide prompt surgical intervention for trauma cases, accidents, and life-threatening emergencies, ensuring patients receive immediate care when every second matters.',
-    },
-    {
-      title: 'Gastrointestinal Surgery',
-      content:
-        'Specialized surgical treatment for conditions affecting the digestive tract, including hernias, gallbladder disease, appendicitis, colorectal disorders, and gastrointestinal tumors.',
-    },
-    {
-      title: 'Endoscopy & Colonoscopy Services',
-      content:
-        'Advanced diagnostic and therapeutic procedures that help identify and treat digestive system conditions while supporting early disease detection and prevention.',
-    },
-  ],
-
-  conditions: [
-    'Appendicitis',
-    'Hernias',
-    'Gallbladder Disease',
-    'Colorectal Disorders',
-    'Traumatic Injuries',
-    'Gastrointestinal Conditions',
-  ],
-
-  image: '/images/services/general-surgery.webp',
-},
-
-{
-  slug: 'orthopaedic-surgery',
-  title: 'Orthopaedic Surgery',
-  category: 'Surgical',
-  icon: 'Bone',
-
-  excerpt:
-    'Specialized diagnosis, treatment, and rehabilitation for bone, joint, muscle, and spine conditions.',
-
-  description:
-    'Our Orthopaedic Surgery Department offers comprehensive care for injuries and disorders affecting the musculoskeletal system. Whether treating fractures, sports injuries, arthritis, spinal conditions, or mobility challenges, our specialists focus on restoring function, reducing pain, and improving quality of life through advanced treatment and rehabilitation programs.',
-
-  highlights: [
-    {
-      title: 'Fracture & Trauma Care',
-      content:
-        'Expert assessment, treatment, and rehabilitation of fractures and musculoskeletal injuries using modern surgical and non-surgical approaches.',
-    },
-    {
-      title: 'Joint Preservation & Reconstruction',
-      content:
-        'Advanced management of arthritis and joint disorders designed to improve mobility, reduce pain, and enhance daily function.',
-    },
-    {
-      title: 'Spine Care Services',
-      content:
-        'Comprehensive evaluation and treatment of spinal conditions including back pain, degenerative disorders, disc disease, and spinal injuries.',
-    },
-    {
-      title: 'Sports Medicine & Rehabilitation',
-      content:
-        'Personalized treatment and recovery programs for athletes and active individuals recovering from sports-related injuries.',
-    },
-  ],
-
-  conditions: [
-    'Fractures',
-    'Arthritis',
-    'Back Pain',
-    'Sports Injuries',
-    'Joint Disorders',
-    'Spinal Conditions',
-  ],
-
-  image: '/images/services/orthopaedics.webp',
-},
-
-{
-  slug: 'cancer-care',
-  title: 'Cancer Care',
-  category: 'Specialty Care',
-  icon: 'ShieldPlus',
-
-  excerpt:
-    'Comprehensive cancer screening, diagnosis, treatment planning, and supportive patient care.',
-
-  description:
-    'RiftView Specialist Center provides patient-centered cancer care focused on prevention, early detection, diagnosis, treatment coordination, and long-term support. Our multidisciplinary approach ensures patients receive personalized care plans tailored to their unique medical needs while maintaining dignity, comfort, and quality of life throughout their treatment journey.',
-
-  highlights: [
-    {
-      title: 'Cancer Screening & Early Detection',
-      content:
-        'Comprehensive screening programs designed to identify cancer at its earliest and most treatable stages, improving survival rates and treatment outcomes.',
-    },
-    {
-      title: 'Cancer Risk Assessment',
-      content:
-        'Evaluation of genetic, lifestyle, occupational, and environmental risk factors that may contribute to cancer development.',
-    },
-    {
-      title: 'Personalized Treatment Planning',
-      content:
-        'Collaborative care involving multiple specialists who develop customized treatment strategies based on each patient’s diagnosis and goals.',
-    },
-    {
-      title: 'Patient Support & Survivorship Care',
-      content:
-        'Emotional support, nutritional guidance, symptom management, counseling, and long-term follow-up services for cancer patients and survivors.',
-    },
-  ],
-
-  conditions: [
-    'Breast Cancer',
-    'Prostate Cancer',
-    'Colorectal Cancer',
-    'Lung Cancer',
-    'Cervical Cancer',
-    'Cancer Risk Assessment',
-  ],
-
-  image: '/images/services/cancer-care.webp',
-},
-
-{
-  slug: 'endocrinology-diabetes',
-  title: 'Endocrinology & Diabetes Management',
-  category: 'Specialty Care',
-  icon: 'Activity',
-
-  excerpt:
-    'Expert care for diabetes, hormonal disorders, metabolic conditions, and endocrine diseases.',
-
-  description:
-    'Our Endocrinology & Diabetes Clinic specializes in diagnosing and managing disorders affecting hormones, metabolism, and blood sugar regulation. We provide personalized care plans, education, nutritional guidance, and ongoing support to help patients achieve better long-term health outcomes.',
-
-  highlights: [
-    {
-      title: 'Comprehensive Diabetes Management',
-      content:
-        'Individualized diabetes care programs focused on blood sugar control, complication prevention, medication management, and lifestyle modification.',
-    },
-    {
-      title: 'Hormonal Health Assessment',
-      content:
-        'Advanced evaluation and treatment of endocrine disorders affecting thyroid function, metabolism, growth, and reproductive health.',
-    },
-    {
-      title: 'Nutrition & Lifestyle Counseling',
-      content:
-        'Evidence-based dietary and lifestyle interventions designed to improve metabolic health and overall wellbeing.',
-    },
-    {
-      title: 'Long-Term Monitoring & Support',
-      content:
-        'Regular follow-up appointments and health monitoring to ensure treatment effectiveness and sustained disease control.',
-    },
-  ],
-
-  conditions: [
-    'Type 1 Diabetes',
-    'Type 2 Diabetes',
-    'Obesity',
-    'Thyroid Disorders',
-    'Hormonal Imbalances',
-    'Metabolic Disorders',
-  ],
-
-  image: '/images/services/endocrinology.webp',
-},
-
-{
-  slug: 'travel-vaccination-clinic',
-  title: 'Travel Vaccination Clinic',
-  category: 'Preventive Care',
-  icon: 'Plane',
-
-  excerpt:
-    'Travel health consultations, vaccinations, and preventive care for safe international travel.',
-
-  description:
-    'Our Travel Vaccination Clinic helps individuals, families, students, and corporate travelers prepare for international travel through vaccinations, travel health consultations, preventive medications, and destination-specific health advice. We ensure travelers meet international health requirements while reducing the risk of travel-related illnesses.',
-
-  highlights: [
-    {
-      title: 'Yellow Fever Vaccination',
-      content:
-        'WHO-approved yellow fever vaccination services with internationally recognized certification for travel requirements.',
-    },
-    {
-      title: 'Travel Health Consultations',
-      content:
-        'Personalized consultations that assess destination risks, vaccination requirements, and preventive health measures.',
-    },
-    {
-      title: 'Malaria Prevention Services',
-      content:
-        'Preventive medications, risk assessments, and educational support to minimize the risk of malaria infection.',
-    },
-    {
-      title: 'Post-Travel Medical Evaluation',
-      content:
-        'Assessment and management of symptoms or illnesses that may develop following international travel.',
-    },
-  ],
-
-  conditions: [
-    'Travel Health Requirements',
-    'Yellow Fever Prevention',
-    'Malaria Prevention',
-    'Travel-Related Illnesses',
-    'International Vaccination Requirements',
-  ],
-
-  image: '/images/services/travel-vaccines.webp',
-},
-
-{
-  slug: 'laboratory-services',
-  title: 'Comprehensive Laboratory Testing',
-  category: 'Diagnostics',
-  icon: 'FlaskConical',
-
-  excerpt:
-    'Accurate laboratory diagnostics supporting timely and informed clinical decisions.',
-
-  description:
-    'Our modern laboratory is equipped to provide a comprehensive range of diagnostic tests that support disease prevention, diagnosis, treatment monitoring, and overall patient care. We maintain strict quality assurance standards to ensure reliable and timely results.',
-
-  highlights: [
-    {
-      title: 'Comprehensive Diagnostic Testing',
-      content:
-        'Extensive laboratory services covering hematology, biochemistry, immunology, microbiology, and specialized investigations.',
-    },
-    {
-      title: 'Health Screening Programs',
-      content:
-        'Preventive health screening packages designed to identify risk factors and detect diseases before symptoms occur.',
-    },
-    {
-      title: 'Microbiology & Infection Testing',
-      content:
-        'Advanced testing services that identify infectious organisms and support evidence-based treatment decisions.',
-    },
-    {
-      title: 'Fast & Reliable Results',
-      content:
-        'Efficient processing systems that provide accurate results within clinically relevant timeframes.',
-    },
-  ],
-
-  conditions: [
-    'Infections',
-    'Diabetes',
-    'Anaemia',
-    'Kidney Disease',
-    'Liver Disorders',
-    'Chronic Diseases',
-  ],
-
-  image: '/images/services/laboratory.webp',
-},
-
-{
-  slug: 'diagnostic-imaging',
-  title: 'Advanced Diagnostic Imaging',
-  category: 'Diagnostics',
-  icon: 'ScanLine',
-
-  excerpt:
-    'State-of-the-art imaging services that support accurate diagnosis and treatment planning.',
-
-  description:
-    'The Diagnostic Imaging Department provides advanced medical imaging services that help physicians diagnose conditions accurately and monitor treatment progress. Our imaging professionals combine modern technology with clinical expertise to deliver reliable results.',
-
-  highlights: [
-    {
-      title: 'Ultrasound Imaging',
-      content:
-        'High-resolution ultrasound examinations used to evaluate organs, soft tissues, blood vessels, and pregnancy development.',
-    },
-    {
-      title: 'Comprehensive Diagnostic Scans',
-      content:
-        'Advanced imaging procedures that provide detailed insights into internal structures and medical conditions.',
-    },
-    {
-      title: 'Expert Radiology Reporting',
-      content:
-        'Detailed interpretation of imaging studies by qualified specialists to support clinical decision-making.',
-    },
-    {
-      title: 'Rapid Reporting & Results',
-      content:
-        'Efficient imaging workflows that enable faster diagnosis and treatment planning.',
-    },
-  ],
-
-  conditions: [
-    'Pregnancy Monitoring',
-    'Internal Injuries',
-    'Tumours',
-    'Musculoskeletal Conditions',
-    'Abdominal Disorders',
-  ],
-
-  image: '/images/services/imaging.webp',
-},
-
-{
-  slug: 'pharmacy-services',
-  title: 'Pharmacy Services',
-  category: 'Support Services',
-  icon: 'Pill',
-
-  excerpt:
-    'Comprehensive pharmaceutical services focused on safe and effective medication management.',
-
-  description:
-    'Our Pharmacy Department provides access to quality medications, prescription management, medication counseling, and pharmaceutical support services. We work closely with healthcare providers to ensure patients receive safe, effective, and affordable treatment.',
-
-  highlights: [
-    {
-      title: 'Prescription Dispensing',
-      content:
-        'Safe and accurate dispensing of medications prescribed by healthcare professionals.',
-    },
-    {
-      title: 'Medication Counseling',
-      content:
-        'Patient-focused education on medication use, dosage schedules, side effects, and treatment adherence.',
-    },
-    {
-      title: 'Drug Interaction Monitoring',
-      content:
-        'Professional review of medications to identify and prevent potentially harmful drug interactions.',
-    },
-    {
-      title: 'Chronic Care Medication Support',
-      content:
-        'Ongoing pharmaceutical management for patients with chronic conditions requiring long-term medication therapy.',
-    },
-  ],
-
-  conditions: [
-    'Medication Management',
-    'Chronic Disease Treatment',
-    'Acute Illness Treatment',
-    'Prescription Therapy',
-    'Preventive Care',
-  ],
-
-  image: '/images/services/pharmacy.webp',
-},
-
-{
-  slug: 'physiotherapy',
-  title: 'Physiotherapy & Rehabilitation',
-  category: 'Wellness',
-  icon: 'Activity',
-
-  excerpt:
-    'Evidence-based rehabilitation programs that restore movement, function, and quality of life.',
-
-  description:
-    'Our Physiotherapy & Rehabilitation Department helps patients recover from injuries, surgeries, neurological conditions, and chronic pain through personalized treatment programs designed to improve mobility, strength, and independence.',
-
-  highlights: [
-    {
-      title: 'Post-Surgical Rehabilitation',
-      content:
-        'Structured rehabilitation programs that support recovery and help patients regain function following surgery.',
-    },
-    {
-      title: 'Pain Management Therapy',
-      content:
-        'Evidence-based interventions designed to reduce pain and improve quality of life without unnecessary dependence on medication.',
-    },
-    {
-      title: 'Mobility & Strength Training',
-      content:
-        'Targeted exercises that improve flexibility, balance, muscle strength, and physical performance.',
-    },
-    {
-      title: 'Sports Injury Rehabilitation',
-      content:
-        'Comprehensive rehabilitation programs that help athletes safely return to sport and physical activity.',
-    },
-  ],
-
-  conditions: [
-    'Back Pain',
-    'Sports Injuries',
-    'Joint Stiffness',
-    'Neurological Conditions',
-    'Post-Surgery Recovery',
-    'Mobility Challenges',
-  ],
-
-  image: '/images/services/physiotherapy.webp',
-},
-
+    slug: 'oncology',
+    title: 'Oncology Department',
+    category: 'Specialty Care',
+    icon: 'Activity',
+    excerpt: 'Advanced chemotherapy, immunotherapy, and holistic supportive counseling for cancer patients.',
+    description: "Cancer care requires not only advanced medicine but also compassion, strength, and trust. At Rift View Specialist Centre, our Oncology Department is built to provide hope and healing through cutting edge chemotherapy and immunotherapy treatments. Patients are welcomed into a supportive environment where every aspect of care is personalized, and where dignity and quality of life are always prioritized. Our multidisciplinary team of oncologists, specialized nurses, and pharmacists ensures that every treatment plan is precise, effective, and compassionate — helping patients and families navigate this journey with strength and reassurance.",
+    highlights: [
+      {
+        title: 'Chemotherapy',
+        content: 'Administered with precision and constant monitoring, our chemotherapy treatments target and destroy cancer cells while minimizing discomfort. We focus on patient safety, comfort, and emotional support at every session.'
+      },
+      {
+        title: 'Immunotherapy',
+        content: 'Harnessing the power of the body\'s own immune system, our immunotherapy treatments provide innovative and often less invasive options for cancer management, with promising outcomes and reduced side effects.'
+      },
+      {
+        title: 'Combined Therapies',
+        content: 'Our oncologists design treatment plans that integrate chemotherapy, immunotherapy, and supportive therapies — tailored to the unique needs of each patient.'
+      },
+      {
+        title: 'Supportive Care & Counseling',
+        content: 'We go beyond medical treatment, providing nutritional support, pain management, counseling, and family-centered care to support patients holistically throughout their journey.'
+      }
+    ],
+    conditions: [
+      'Breast Cancer',
+      'Prostate Cancer',
+      'Cervical Cancer',
+      'Colorectal Cancer',
+      'Lung Cancer',
+      'Cancer-Related Pain & Side Effects'
+    ],
+    image: '/images/services/cancer-care.webp'
+  },
+  {
+    slug: 'pharmacy',
+    title: 'Pharmacy Department',
+    category: 'Support Services',
+    icon: 'Pill',
+    excerpt: 'Inpatient and outpatient dispensing, expert medication counseling, and strict safety monitoring.',
+    description: "Our Pharmacy is a cornerstone of patient care at Rift View Specialist Centre — ensuring timely access to safe, effective medications while offering expert guidance on their use. More than just a medication dispensing unit, it is a trusted resource where patients receive professional advice, reassurance, and continuity of care as part of their treatment journey.",
+    highlights: [
+      {
+        title: 'Inpatient & Outpatient Dispensing',
+        content: 'We ensure all patients — whether admitted or visiting the OPD — have convenient, reliable access to prescribed medicines without delay.'
+      },
+      {
+        title: 'Comprehensive Range of Medications',
+        content: 'From essential prescriptions to specialized drugs, our pharmacy maintains a wide inventory that supports the diverse needs of our patients.'
+      },
+      {
+        title: 'Pharmacist Counseling',
+        content: 'Our experienced pharmacists provide one-on-one consultations, helping patients understand dosages, potential side effects, and safe use of their medications.'
+      },
+      {
+        title: 'Medication Safety & Monitoring',
+        content: 'We prioritize safety by carefully checking prescriptions for interactions, tracking patient history, and ensuring all medications meet the highest quality standards.'
+      }
+    ],
+    conditions: [
+      'Medication Mismanagement',
+      'Drug-Drug Interactions',
+      'Chronic Medication Refills',
+      'Adverse Side Effects',
+      'Dosage Adjustments'
+    ],
+    image: '/images/services/pharmacy.webp'
+  }
 ]
