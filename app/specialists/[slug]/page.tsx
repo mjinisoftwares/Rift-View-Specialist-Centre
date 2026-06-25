@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Image from 'next/image'
@@ -19,6 +20,26 @@ import {
   Languages,
   CheckCircle2,
 } from 'lucide-react'
+
+// Brand icons removed from lucide-react v1.0 — using inline SVGs instead
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+)
+
+const TwitterIcon = ({ className }: { className?: string }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+  </svg>
+)
+
+const YoutubeIcon = ({ className }: { className?: string }) => (
+  <svg className={className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="white" />
+  </svg>
+)
 import { specialists, site } from '@/lib/data'
 import { Reveal } from '@/components/motion/reveal'
 import { CtaButton } from '@/components/cta-button'
@@ -179,6 +200,39 @@ export default async function SpecialistDetailPage({
                     Call Now
                   </CtaButton>
                 </div>
+
+                {/* Social links */}
+                {specialist.socials && specialist.socials.length > 0 && (
+                  <div className="mt-6 flex flex-wrap items-center justify-center gap-3 lg:justify-start">
+                    <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                      Connect
+                    </span>
+                    {specialist.socials.map((social) => {
+                      const iconMap: Record<string, React.ReactNode> = {
+                        LinkedIn: <Globe className="h-4 w-4" />,
+                        Twitter: <TwitterIcon className="h-4 w-4" />,
+                        YouTube: <YoutubeIcon className="h-4 w-4" />,
+                        Facebook: <FacebookIcon className="h-4 w-4" />,
+                      }
+                      const icon = iconMap[social.name] ?? <Globe className="h-4 w-4" />
+                      return (
+                        <a
+                          key={social.name}
+                          href={social.href.trim()}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title={social.name}
+                          className="group flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm font-medium text-muted-foreground shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary hover:shadow-md"
+                        >
+                          <span className="text-primary transition-transform duration-200 group-hover:scale-110">
+                            {icon}
+                          </span>
+                          {social.name}
+                        </a>
+                      )
+                    })}
+                  </div>
+                )}
               </div>
             </Reveal>
           </div>
