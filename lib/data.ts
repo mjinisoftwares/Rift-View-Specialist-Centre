@@ -55,6 +55,9 @@ export const specialistDepartments = [
   'Family Medicine Department & Travel Vaccines department',
   'Oncology Department',
   'Pharmacy Department',
+  'Mental Health Awareness (Psychology and Psychiatry Clinic)',
+  'Urology',
+  'Neurosurgical Clinic and Dermatology Departments and Services',
 ]
 
 export const specialists: Specialist[] = [

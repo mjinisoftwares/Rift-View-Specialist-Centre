@@ -473,5 +473,119 @@ export const services: Service[] = [
     images: [
       { src: '/images/pharmacy-rift-view-specialist-center.webp', alt: 'Pharmacy at Rift View Specialist Centre' },
     ]
+  },
+  {
+    slug: 'mental-health-awareness',
+    title: 'Mental Health Awareness (Psychology and Psychiatry Clinic)',
+    category: 'Specialist Clinics',
+    icon: 'Brain',
+    excerpt: 'Providing compassionate, professional psychological and psychiatric care to support your mental and emotional well-being.',
+    description: "At Rift View Specialist Centre, we believe that mental health is a fundamental pillar of overall wellness. Our Mental Health Awareness clinic (integrating Psychology and Psychiatry services) offers a safe, confidential, and supportive space for individuals, couples, and families. Our clinical psychologists and psychiatrists collaborate to deliver comprehensive diagnostic assessments, counseling, psychotherapy, and psychiatric medical management. We are dedicated to reducing stigma and providing compassionate care tailored to your unique journey.",
+    highlights: [
+      {
+        title: 'Psychological Assessment & Therapy',
+        content: 'Detailed diagnostic interviews and evidence-based psychotherapy (such as Cognitive Behavioral Therapy) for anxiety, depression, and trauma.'
+      },
+      {
+        title: 'Psychiatric Consultations',
+        content: 'Medical evaluation and management of mental health conditions by qualified psychiatrists, ensuring safe and effective treatment plans.'
+      },
+      {
+        title: 'Stress & Stigma Management',
+        content: 'Dedicated support and educational programs focused on stress reduction, coping strategies, and breaking the stigma around mental illness.'
+      },
+      {
+        title: 'Child & Adolescent Therapy',
+        content: 'Age-appropriate counseling to support children and teenagers experiencing developmental, behavioral, or emotional challenges.'
+      }
+    ],
+    conditions: [
+      'Depression & Mood Disorders',
+      'Anxiety & Panic Attacks',
+      'Post-Traumatic Stress (PTSD)',
+      'Stress & Burnout',
+      'Schizophrenia & Psychotic Disorders',
+      'Behavioral & Developmental Challenges'
+    ],
+    images: [
+      { src: '/images/consultation-room.webp', alt: 'Confidential consultation room for mental health therapy at Rift View' },
+      { src: '/images/waiting-bay.webp', alt: 'A calm and welcoming waiting bay at Rift View Specialist Centre' }
+    ]
+  },
+  {
+    slug: 'urology',
+    title: 'Urology',
+    category: 'Specialist Clinics',
+    icon: 'Droplet',
+    excerpt: 'Specialist care for urinary tract conditions and male reproductive health, offering modern diagnostics and surgical interventions.',
+    description: "Our Urology department provides comprehensive medical and surgical care for diseases of the urinary tract in both men and women, as well as the male reproductive system. Led by experienced urologists and supported by state-of-the-art diagnostic imaging and laboratory services, we offer personalized treatment plans for conditions ranging from kidney stones and urinary tract infections to prostate health and uro-oncology. We focus on minimally invasive procedures and modern interventions to ensure swift recovery and optimal patient outcomes.",
+    highlights: [
+      {
+        title: 'Kidney Stone Management',
+        content: 'Advanced diagnostics and treatment options, including minimally invasive techniques to retrieve or dissolve stones with minimal discomfort.'
+      },
+      {
+        title: 'Prostate Care & Screenings',
+        content: 'Comprehensive screenings for prostate enlargement (BPH) and prostate cancer, utilizing PSA testing, ultrasounds, and specialist care.'
+      },
+      {
+        title: 'Urinary Tract Infections (UTIs)',
+        content: 'Thorough diagnosis and targeted treatment of acute, recurrent, and chronic UTIs in both men and women.'
+      },
+      {
+        title: 'Uro-Oncology Services',
+        content: 'Specialized diagnosis and multidisciplinary care plans for bladder, kidney, and prostate cancers.'
+      }
+    ],
+    conditions: [
+      'Kidney Stones (Urolithiasis)',
+      'Benign Prostatic Hyperplasia (BPH)',
+      'Urinary Tract Infections (UTIs)',
+      'Urinary Incontinence',
+      'Prostate Cancer',
+      'Male Infertility & Erectile Dysfunction'
+    ],
+    images: [
+      { src: '/images/examination-room-with-medical-equipments.webp', alt: 'Urology diagnostic examination room at Rift View' },
+      { src: '/images/lab-equipments-rift-view-specialist-center.webp', alt: 'Advanced laboratory testing for urology diagnostics' }
+    ]
+  },
+  {
+    slug: 'neurosurgery-dermatology',
+    title: 'Neurosurgical Clinic and Dermatology Departments and Services',
+    category: 'Specialist Clinics',
+    icon: 'Stethoscope',
+    excerpt: 'Expert surgical care for brain and spine disorders, combined with comprehensive dermatological treatments for skin, hair, and nail health.',
+    description: "This unique combined department brings together two critical areas of specialized medicine: Neurosurgical care and Dermatology services. Our Neurosurgical clinic focuses on the diagnosis and surgical treatment of disorders affecting the brain, spinal cord, and peripheral nerves, utilizing advanced imaging and neuro-navigation support. Concurrently, our Dermatology services offer comprehensive care for clinical and aesthetic conditions of the skin, hair, and nails, providing expert treatments for everything from acne and eczema to complex dermatological procedures. Patients benefit from the expertise of leading specialists working in state-of-the-art facilities.",
+    highlights: [
+      {
+        title: 'Spine & Brain Neurosurgery',
+        content: 'Consultation and surgical treatment for spinal disc herniation, spinal stenosis, head trauma, and brain tumors.'
+      },
+      {
+        title: 'Peripheral Nerve Care',
+        content: 'Diagnostic evaluation and treatment for nerve compression syndromes, such as carpal tunnel syndrome.'
+      },
+      {
+        title: 'Clinical Dermatology',
+        content: 'Expert diagnosis and therapy for chronic skin conditions, including eczema, psoriasis, acne, and skin infections.'
+      },
+      {
+        title: 'Procedural & Aesthetic Dermatology',
+        content: 'Minor surgeries, skin biopsies, mole removal, and advanced therapies for skin rejuvenation and scar management.'
+      }
+    ],
+    conditions: [
+      'Herniated Discs & Back Pain',
+      'Brain & Spine Tumors',
+      'Eczema, Psoriasis & Acne',
+      'Skin Infections & Allergies',
+      'Nerve Compression (Carpal Tunnel)',
+      'Hair Loss & Nail Disorders'
+    ],
+    images: [
+      { src: '/images/xray.webp', alt: 'Neuroimaging interpretation and diagnostic facilities at Rift View' },
+      { src: '/images/examination-room-with-medical-equipments.webp', alt: 'Specialist consultation room for dermatology and neurosurgery' }
+    ]
   }
 ]

@@ -42,8 +42,6 @@ export default function FAQsFour() {
 
                 <div className="mx-auto mt-12 max-w-xl">
                     <Accordion
-                        type="single"
-                        collapsible
                         className="bg-muted dark:bg-muted/50 w-full rounded-2xl p-1">
                         {faqItems.map((item) => (
                             <div
