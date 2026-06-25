@@ -14,10 +14,10 @@ export const site = {
     { day: 'Emergency', time: 'Open 24 Hours' },
   ],
   socials: [
-    { name: 'Facebook', href: '#', icon: 'Facebook' },
-    { name: 'Twitter', href: '#', icon: 'Twitter' },
-    { name: 'Instagram', href: '#', icon: 'Instagram' },
-    { name: 'YouTube', href: '#', icon: 'Youtube' },
+    { name: 'Facebook', href: 'https://www.facebook.com/p/Rift-View-Specialist-Centre-61586767387040/', icon: 'Facebook' },
+    { name: 'TikTok', href: 'https://www.tiktok.com/discover/rift-view-specialist-center-naivasha', icon: 'Tiktok' },
+    { name: 'Instagram', href: 'https://www.facebook.com/p/Rift-View-Specialist-Centre-61586767387040/', icon: 'Instagram' },
+   
   ],
 }
 
