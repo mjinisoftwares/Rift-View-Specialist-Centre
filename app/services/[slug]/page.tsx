@@ -81,6 +81,17 @@ export default async function ServiceDetailPage({
       name: 'Rift View Specialist Centre',
       url: 'https://riftviewspecialist.co.ke',
     },
+    location: {
+      '@type': 'Place',
+      name: 'Rift View Specialist Centre',
+      address: {
+       
+        streetAddress: 'RIFTVIEW SPECIALIST CENTRE, Opp. DRIC, Along Kenyatta Avenue, Naivasha Town',
+        addressLocality: 'Naivasha',
+        addressRegion: 'Nakuru County',       
+        addressCountry: 'KE',
+      },
+    },
   }
 
   return (
