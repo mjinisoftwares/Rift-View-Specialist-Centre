@@ -8,7 +8,7 @@ import { CtaButton } from '@/components/cta-button'
 
 const slides = [
   {
-    image: '/images/riftview-1.webp',
+    image: '/images/cake-cutting-riftview-grand-opening.webp',
     alt: 'Rift View Specialist Center Building in Naivasha',
     titleLead: 'Specialist',
     titleAccent: 'Healthcare',
@@ -16,28 +16,36 @@ const slides = [
     text: "At Rift View Specialist Centre, we deliver comprehensive and compassionate care for cancer patients. Our multidisciplinary team creates personalized, holistic treatment plans to meet each patient&rsquo;s unique needs.",
   },
   {
-    image: '/images/riftview-3.webp',
+    image: '/images/medicl-staff-treating-patient-in-community-o.webp',
     alt: 'Outreach Program treating community members in Naivasha',
     titleLead: 'Compassionate',
     titleAccent: 'Care',
-    titleTail: 'for the Whole Community',
+    titleTail: 'for the community',
     text: 'From paediatrics to chronic disease management, our experienced consultants put your wellbeing at the heart of everything we do.',
   },
   {
-    image: '/images/riftview-4.webp',
+    image: '/images/two-medical-staff.webp  ',
     alt: 'Rift View Specialist Center - Reception',
-    titleLead: 'Expert',
+    titleLead: 'Medical',
     titleAccent: 'Specialists',
     titleTail: 'you can trust',
-    text: 'A multidisciplinary team of over 40 specialists working together to provide world-class healthcare close to home.',
+    text: 'A multidisciplinary team of over 40 specialists working together to provide quality and compassionate healthcare close to home.',
   },
   {
-    image: '/images/xray.webp',
-    alt: 'Doctor examining X-ray results',
+    image: '/images/riftview-mri-equipment.webp',
+    alt: 'Doctor standing next to MRI machine at Rift View Specialist Center Naivasha',
     titleLead: 'Advanced',
     titleAccent: 'Diagnostics',
     titleTail: 'for accurate results',
     text: 'Modern laboratory and imaging facilities deliver fast, reliable results to guide effective treatment decisions.',
+  },
+  {
+    image: '/images/examination-room-with-medical-equipments.webp',
+    alt: 'Medical Equipment in examination room at Rift View Specialist Center Naivasha',
+    titleLead: 'Quality & Affordable',
+    titleAccent: 'Healthcare',
+    titleTail: 'for all',
+    text: 'We believe that quality healthcare should be accessible to everyone in our community. That’s why we’re committed to providing comprehensive, compassionate, and affordable medical services that meet the diverse needs of our patients.',
   },
 ]
 
@@ -110,7 +118,7 @@ export function HeroCarousel() {
         </div>
 
         <div className="relative">
-          <div className="relative aspect-4/3 overflow-hidden rounded-2xl shadow-2xl border-4 border-secondary">
+          <div className="relative aspect-4/3 overflow-hidden rounded-2xl shadow-2xl border-2 border-secondary/50">
             <AnimatePresence mode="wait">
               <motion.div
                 key={index}

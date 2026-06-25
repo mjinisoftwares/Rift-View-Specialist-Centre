@@ -12,11 +12,11 @@ export default function CEOSetion() {
                          description=""
                        />
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
-                    <div className="relative mb-6 sm:mb-0">
+                    <div className="relative mb-6 sm:mb-0 md:mt-12">
                        <div className="relative mx-auto h-100 w-100 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-2 shadow-2xl">
   <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-secondary bg-white">
     <Image
-      src="/images/doctor-male-2.png"
+      src="/images/dr-daniel-somba-chairman.webp"
       alt="Doctor at RiftView Specialist Center"
       fill
       className="object-cover"
@@ -29,17 +29,17 @@ export default function CEOSetion() {
                   
                         <div className="pt-8">
                             <blockquote className="border-l-4 md:pl-16 border-accent">
-                                <p className='font-md text-primary/80 text-lg'>"Dear Community Members and Patients,
+                                <p className='font-md text-primary/80 text-base'>"Dear Community Members and Patients,
 Welcome to Rift View Specialist Centre! Our mission is clear:
 compassionate, high-quality care that puts you first. </p>
-<p className='font-md text-primary/80 mt-8 text-lg'>
+<p className='font-md text-primary/80 mt-2 text-base'>
 We build a healing environment of trust, expertise, and empathy.
 Our dedicated team physicians, nurses, and staff are your partners in health, always advancing with the latest medical technologies to deliver unparalleled care.
- </p><p className='font-md text-primary/80 mt-8 text-lg'>Thank you for entrusting us with your well-being. Together, we
+ </p><p className='font-md text-primary/80 mt-2 text-base'>Thank you for entrusting us with your well-being. Together, we
 look forward to many years of serving our community."</p>
 
                                 <div className="mt-6 space-y-3">
-                                    <cite className="block font-semibold text-xl">Daniel Somba</cite>
+                                    <cite className="block font-semibold text-xl">Dr. Daniel Somba</cite>
                                     <p className='text-lg font-medium text-secondary'>Chairman</p>
                                      <p className='italic font-medium text-primary'>Riftview Specialist Centre, Naivasha</p>
                                 
