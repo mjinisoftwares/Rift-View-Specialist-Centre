@@ -10,7 +10,7 @@ export type Service = {
     content: string
   }[]
   conditions: string[]
-  image: string
+  images: { src: string; alt: string }[]
 }
 
 export const services: Service[] = [
@@ -46,7 +46,11 @@ export const services: Service[] = [
       'Routine Checkups',
       'Lifestyle-Related Diseases'
     ],
-    image: '/images/services/family-medicine.webp'
+    images: [
+      { src: '/images/consultation-room.webp', alt: 'Consultation room at Rift View Specialist Centre' },
+      { src: '/images/medicl-staff-treating-patient-in-community-o.webp', alt: 'Medical staff treating patients at Rift View outreach' },
+      { src: '/images/waiting-bay.webp', alt: 'Waiting bay at Rift View Specialist Centre' },
+    ]
   },
   {
     slug: 'diagnostic-department',
@@ -80,7 +84,14 @@ export const services: Service[] = [
       'Neurological Disorders',
       'Infections and Pathology'
     ],
-    image: '/images/xray.webp'
+    images: [
+        { src: '/images/lab-rift-view-specialist-center.webp', alt: 'Lab equipment at Rift View Specialist Centre' },
+      { src: '/images/riftview-mri-equipment.webp', alt: 'MRI equipment at Rift View Specialist Centre' },
+      { src: '/images/lab-equipments-rift-view-specialist-center.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
+      { src: '/images/lab-equipments-rift-view-specialist-center-2.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
+      { src: '/images/lab-equipments-rift-view-specialist-center-3.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
+     { src: '/images/xray.webp', alt: 'X-ray imaging at Rift View Specialist Centre' },
+   ]
   },
   {
     slug: 'ophthalmology',
@@ -123,7 +134,12 @@ export const services: Service[] = [
       'Dry Eye Syndrome',
       'Macular Degeneration'
     ],
-    image: '/images/services/imaging.webp'
+    images: [
+      { src: '/images/Eye-Glases-at-Rift-View-Specialist-Center.webp', alt: 'Eye examination at Rift View Specialist Centre' },
+      { src: '/images/eye-glasses-rift-view-specialist-center.webp', alt: 'Eye glasses and eye care at Rift View Specialist Centre' },
+      { src: '/images/eye-glasses-rift-view-specialist-center-1.webp', alt: 'Ophthalmology care at Rift View Specialist Centre' },
+
+    ]
   },
   {
     slug: 'dental-unit',
@@ -170,7 +186,14 @@ export const services: Service[] = [
       'Impacted Wisdom Teeth',
       'Stained or Discolored Teeth'
     ],
-    image: '/images/services/family-medicine.webp'
+    images: [
+      { src: '/images/dental-staff-rift-view-specialist-center.webp', alt: 'Dental care at Rift View Specialist Centre' },
+      { src: '/images/dental-staff-rift-view.webp', alt: 'Dental staff at Rift View Specialist Centre' },
+      { src: '/images/dental-assistant-riftview-specialist-center.webp', alt: 'Dental assistant at Rift View Specialist Centre' },
+      { src: '/images/male-dental-staff-rift-view-specialist-center.webp', alt: 'Male dental staff at Rift View Specialist Centre' },
+      { src: '/images/female-dental-staff-rift-view-specialist-center.webp', alt: 'Female dental staff at Rift View Specialist Centre' },
+      { src: '/images/dental-staff-rift-view-specialist-center.jpg', alt: 'Dental care at Rift View Specialist Centre' },
+    ]
   },
   {
     slug: 'ent-audiology',
@@ -209,7 +232,9 @@ export const services: Service[] = [
       'Vertigo & Balance Issues',
       'Vocal Cord Disorders'
     ],
-    image: '/images/services/family-medicine.webp'
+    images: [
+      { src: '/images/ENT-office-rift-view-specialist-center.webp', alt: 'ENT and Audiology care offices at Rift View Specialist Centre' },
+         ]
   },
   {
     slug: 'orthopedics-physiotherapy',
@@ -248,7 +273,9 @@ export const services: Service[] = [
       'Scoliosis & Spinal Stenosis',
       'Post-Surgical Stiffness'
     ],
-    image: '/images/services/orthopaedics.webp'
+    images: [
+      { src: '/images/paeditrician-office-rift-view-specialist-center.webp', alt: 'Orthopaedics and physiotherapy at Rift View Specialist Centre' },
+    ]
   },
   {
     slug: 'obstetrics-gynecology-family-planning',
@@ -279,7 +306,9 @@ export const services: Service[] = [
       'Menopausal & Hormonal Shifts',
       'Cervical Dysplasia'
     ],
-    image: '/images/services/obgyn.webp'
+    images: [
+      { src: '/images/obstetrics-gynecology-family-planning-offices-rift-view.webp', alt: 'Obstetrics and gynaecology offices at Rift View Specialist Centre' },
+        ]
   },
   {
     slug: 'pediatrics-immunizations',
@@ -322,7 +351,9 @@ export const services: Service[] = [
       'Growth Delays',
       'Pediatric Trauma & Injuries'
     ],
-    image: '/images/services/paediatrics.webp'
+    images: [
+      { src: '/images/pediatrician-rift-view-specialist-center.webp', alt: 'Paediatrics and child care at Rift View Specialist Centre' },
+    ]
   },
   {
     slug: 'family-medicine-travel-vaccines',
@@ -365,7 +396,9 @@ export const services: Service[] = [
       'Malaria Exposure',
       'Gastrointestinal Infections'
     ],
-    image: '/images/services/family-medicine.webp'
+    images: [
+      { src: '/images/examination-room-with-medical-equipments.webp', alt: 'Family medicine at Rift View Specialist Centre' },
+    ]
   },
   {
     slug: 'oncology',
@@ -400,7 +433,10 @@ export const services: Service[] = [
       'Lung Cancer',
       'Cancer-Related Pain & Side Effects'
     ],
-    image: '/images/services/cancer-care.webp'
+    images: [
+      { src: '/images/examination-room-with-medical-equipments.webp', alt: 'Oncology and radiology care offices at Rift View Specialist Centre' },
+      { src: '/images/cancer-care-offices-rift-view-specialist-center.webp', alt: 'Oncology cancer care offices at Rift View Specialist Centre' },
+        ]
   },
   {
     slug: 'pharmacy',
@@ -434,6 +470,8 @@ export const services: Service[] = [
       'Adverse Side Effects',
       'Dosage Adjustments'
     ],
-    image: '/images/services/pharmacy.webp'
+    images: [
+      { src: '/images/pharmacy-rift-view-specialist-center.webp', alt: 'Pharmacy at Rift View Specialist Centre' },
+    ]
   }
 ]

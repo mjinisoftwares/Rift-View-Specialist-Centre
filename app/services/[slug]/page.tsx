@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Check, ArrowRight, ArrowLeft } from 'lucide-react'
 import { services } from '@/lib/services'
@@ -9,6 +8,7 @@ import { Reveal } from '@/components/motion/reveal'
 import { CtaButton } from '@/components/cta-button'
 import { CtaBand } from '@/components/cta-band'
 import { ServiceCard } from '@/components/cards/service-card'
+import { ServiceImageCarousel } from '@/components/services/service-image-carousel'
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }))
@@ -86,15 +86,10 @@ export default async function ServiceDetailPage({
               </div>
             </Reveal>
             <Reveal delay={0.1}>
-              <div className="relative aspect-4/3 overflow-hidden rounded-3xl shadow-lg">
-                <Image
-                  src={service.image || '/placeholder.svg'}
-                  alt={`${service.title} at Rift View Specialist Centre`}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-              </div>
+              <ServiceImageCarousel
+                images={service.images}
+                alt={`${service.title} at Rift View Specialist Centre`}
+              />
             </Reveal>
           </div>
         </div>
