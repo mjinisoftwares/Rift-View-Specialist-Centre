@@ -12,7 +12,7 @@ export default function CEOSetion() {
                          description=""
                        />
                 <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
-                    <div className="relative mb-6 sm:mb-0 md:mt-12">
+                    <div className="relative mb-6 sm:mb-0 ">
                        <div className="relative mx-auto h-100 w-100 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-2 shadow-2xl">
   <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-secondary bg-white">
     <Image

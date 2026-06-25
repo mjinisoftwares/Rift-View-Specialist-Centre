@@ -10,7 +10,7 @@ export function SpecialistsPreview() {
       <div className="mx-auto max-w-7xl px-6 md:px-12">
         <SectionHeading
           eyebrow="Meet Our Team"
-          title="Experienced specialists who care"
+          title="Our Medical Specialists"
           description="Our consultants bring deep expertise and genuine compassion to every patient they treat."
         />
         <StaggerGroup className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

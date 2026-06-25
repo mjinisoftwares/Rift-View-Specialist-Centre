@@ -42,7 +42,7 @@ export function ServiceCard({ service, index = 0 }: ServiceCardProps) {
         <div
           className={`
             absolute -inset-px -z-10 rounded-2xl
-            bg-accent/50
+            bg-accent/20
             opacity-0 transition-opacity duration-500
             group-hover:opacity-100
           `}

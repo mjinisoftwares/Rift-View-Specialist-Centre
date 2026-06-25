@@ -56,7 +56,7 @@ export function WhyChoose() {
             <div className="relative mx-auto h-72 w-72 rounded-full bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 p-2 shadow-2xl md:h-[420px] md:w-[420px]">
   <div className="relative h-full w-full overflow-hidden rounded-full border-4 border-white bg-white">
     <Image
-      src="/images/xray.webp"
+      src="/images/staff-riftview.webp"
       alt="The RiftView medical team"
       fill
       sizes="(max-width: 768px) 288px, 420px"

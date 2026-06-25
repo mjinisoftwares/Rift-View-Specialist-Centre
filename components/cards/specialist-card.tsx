@@ -12,7 +12,7 @@ export function SpecialistCard({ specialist }: { specialist: Specialist }) {
     <motion.div variants={staggerItem}>
       <Link
         href={`/specialists/${specialist.slug}`}
-        className="group block overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
+        className="group block overflow-hidden rounded-2xl  border-2 border-accent/70  bg-card transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
       >
         <div className="relative aspect-4/5 overflow-hidden bg-secondary">
           <Image
@@ -22,7 +22,7 @@ export function SpecialistCard({ specialist }: { specialist: Specialist }) {
             sizes="(max-width: 768px) 50vw, 25vw"
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
-          <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-primary backdrop-blur">
+          <span className="absolute border border-accent/20 left-3 bottom-3 rounded-full bg-primary px-3 py-2 text-xs font-semibold text-white backdrop-blur">
             {specialist.department}
           </span>
           <span className="absolute right-3 top-3 flex size-9 items-center justify-center rounded-full bg-[--color-brand-green] text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">

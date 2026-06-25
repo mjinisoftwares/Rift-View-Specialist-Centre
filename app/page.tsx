@@ -8,6 +8,7 @@ import { TestimonialsCarousel } from '@/components/testimonials-carousel'
 import { CtaBand } from '@/components/cta-band'
 import Partners from '@/components/home/partners'
 import CEOSetion from '@/components/ceo'
+import { Directors } from '@/components/home/directors'
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <HeroCarousel />
       <Partners />
       <CEOSetion />
+      <Directors />
       <ServicesPreview />
        <CtaBand />
       <WhyChoose />

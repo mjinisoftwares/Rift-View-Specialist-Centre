@@ -93,13 +93,13 @@ export default async function SpecialistDetailPage({
             <span className="text-foreground">{specialist.name}</span>
           </nav>
 
-          <div className="grid items-center gap-10 lg:grid-cols-[auto_1fr]">
+          <div className="grid items-center gap-10 md:gap-16 lg:gap-24 lg:grid-cols-[auto_1fr]">
             {/* Profile Image */}
             <Reveal>
               <div className="relative mx-auto lg:mx-0">
                 {/* Outer ring */}
                 <div className="relative h-64 w-64 sm:h-80 sm:w-80">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary via-[--color-brand-sky] to-accent p-1">
+                  <div className="absolute inset-0 rounded-full bg-accent p-1">
                     <div className="h-full w-full rounded-full bg-background p-1">
                       <div className="relative h-full w-full overflow-hidden rounded-full">
                         <Image
@@ -120,13 +120,7 @@ export default async function SpecialistDetailPage({
                       {specialist.experience}
                     </span>
                   </div>
-                  {/* Department badge floating */}
-                  <div className="absolute -left-2 top-6 flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 shadow-lg">
-                    <Stethoscope className="h-4 w-4 text-[--color-brand-sky]" />
-                    <span className="text-sm font-semibold text-foreground">
-                      {specialist.department}
-                    </span>
-                  </div>
+              
                 </div>
               </div>
             </Reveal>
