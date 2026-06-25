@@ -64,6 +64,27 @@ export async function generateMetadata({
     title: `${specialist.name} — ${specialist.title} | Rift View Specialist Centre`,
     description: specialist.bio,
     alternates: { canonical: `/specialists/${specialist.slug}` },
+    openGraph: {
+      type: 'profile',
+      title: `${specialist.name} — ${specialist.title}`,
+      description: specialist.bio,
+      url: `https://riftviewspecialist.co.ke/specialists/${specialist.slug}`,
+      siteName: 'Rift View Specialist Centre',
+      images: [
+        {
+          url: `https://riftviewspecialist.co.ke${specialist.image}`,
+          width: 800,
+          height: 800,
+          alt: specialist.name,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${specialist.name} — ${specialist.title}`,
+      description: specialist.bio,
+      images: [`https://riftviewspecialist.co.ke${specialist.image}`],
+    },
   }
 }
 
@@ -87,8 +108,29 @@ export default async function SpecialistDetailPage({
     .slice(0, 3)
   const relatedSpecialists = related.length ? related : fallbackRelated
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Physician',
+    name: specialist.name,
+    image: `https://riftviewspecialist.co.ke${specialist.image}`,
+    description: specialist.bio,
+    medicalSpecialty: specialist.specialties.map((s) => ({
+      '@type': 'MedicalSpecialty',
+      name: s,
+    })),
+    url: `https://riftviewspecialist.co.ke/specialists/${specialist.slug}`,
+    hospitalAffiliation: {
+      '@type': 'Hospital',
+      name: 'Rift View Specialist Centre',
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* ── Hero Section ── */}
       <section className="relative overflow-hidden border-b border-border bg-gradient-to-br from-primary/[0.06] via-secondary/10 to-accent/[0.06]">
         {/* Decorative background elements */}

@@ -22,10 +22,34 @@ export async function generateMetadata({
   const { slug } = await params
   const service = services.find((s) => s.slug === slug)
   if (!service) return {}
+
+  const ogImage = service.images && service.images.length > 0 ? service.images[0].src : '/logo.png';
+
   return {
     title: `${service.title} in Naivasha | Rift View Specialist Centre`,
     description: service.excerpt,
     alternates: { canonical: `/services/${service.slug}` },
+    openGraph: {
+      type: 'website',
+      title: `${service.title} in Naivasha | Rift View Specialist Centre`,
+      description: service.excerpt,
+      url: `https://riftviewspecialist.co.ke/services/${service.slug}`,
+      siteName: 'Rift View Specialist Centre',
+      images: [
+        {
+          url: `https://riftviewspecialist.co.ke${ogImage}`,
+          width: 1200,
+          height: 630,
+          alt: service.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.title} in Naivasha | Rift View Specialist Centre`,
+      description: service.excerpt,
+      images: [`https://riftviewspecialist.co.ke${ogImage}`],
+    },
   }
 }
 
@@ -47,8 +71,24 @@ export default async function ServiceDetailPage({
     .slice(0, 3)
   const relatedServices = related.length ? related : fallbackRelated
 
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalSpecialty',
+    name: service.title,
+    description: service.description,
+    hospitalAffiliation: {
+      '@type': 'Hospital',
+      name: 'Rift View Specialist Centre',
+      url: 'https://riftviewspecialist.co.ke',
+    },
+  }
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <section className="border-b border-border bg-secondary/10">
         <div className="mx-auto max-w-7xl px-4 md:px-12 py-12 sm:px-6 md:py-16 ">
           <nav className="mb-6 flex items-center gap-2 text-sm text-muted-foreground">

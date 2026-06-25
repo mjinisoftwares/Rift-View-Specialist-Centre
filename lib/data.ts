@@ -84,7 +84,7 @@ export const specialists: Specialist[] = [
     slug: 'Dr-Charles-Itegi-Rift-View-Specialist-Center',
     name: 'Dr. Charles Itegi',
     title: 'Consultant General Surgeon',
-    department: 'OutPatient Department (OPD)',
+    department: 'Family Medicine Department & Travel Vaccines department',
     image: '/images/Dr-Charles-Itegi-Rift-View-Specialist-Center.webp',
     bio: 'Senior physician-executive (MBChB, MMed Family Medicine, MBA Healthcare Leadership & Management) with over 10 years of experience in clinical practice and health systems leadership. Currently serving as a Consultant Family Physician and County Primary Health Care Coordinator, leading primary healthcare networks, community health systems, digital health initiatives, and health financing. Experienced in RMNCAH, data governance, EmONC, and international donor partnerships, with multilingual proficiency in English, Spanish, Swahili, and Pokot.',
     experience: '10+ years',

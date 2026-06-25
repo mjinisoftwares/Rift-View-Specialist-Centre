@@ -74,6 +74,30 @@ export default function RootLayout({
         <SiteFooter />
         <FloatingActions />
         {process.env.NODE_ENV === 'production' && <Analytics />}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'MedicalOrganization',
+              name: 'RiftView Specialist Centre',
+              url: 'https://riftviewspecialist.co.ke',
+              logo: 'https://riftviewspecialist.co.ke/logo.png',
+              contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+254-719-225227',
+                contactType: 'customer service',
+              },
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: 'Opp. DRIC, Along Kenyatta Avenue',
+                addressLocality: 'Naivasha Town',
+                addressRegion: 'Nakuru County',
+                addressCountry: 'KE',
+              },
+            }),
+          }}
+        />
       </body>
     </html>
   )
