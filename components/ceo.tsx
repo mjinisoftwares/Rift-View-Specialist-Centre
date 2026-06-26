@@ -7,7 +7,7 @@ export default function CEOSetion() {
             <div className="mx-auto max-w-7xl space-y-8 px-6 md:px-12 md:space-y-16">
               <SectionHeading
                          eyebrow="What defines RiftView Specialist Center"
-                         title="A Message from Our CEO"
+                         title="A Message from Our Chairman"
                          align='center'
                          description=""
                        />
