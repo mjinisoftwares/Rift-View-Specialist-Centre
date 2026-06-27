@@ -40,8 +40,7 @@ export function Directors() {
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               Our directors bring together decades of medical, business and
               healthcare management experience, ensuring RiftView Specialist
-              Center continues to provide world-class medical services,
-              advanced diagnostics and patient-centered care to the people of
+              Center continues to provide world-class medical services and patient-centered care to the people of
               Naivasha and beyond.
             </p>
           </div>

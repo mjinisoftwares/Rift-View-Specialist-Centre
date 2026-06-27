@@ -1,38 +1,64 @@
 'use client'
 
 import { motion } from 'motion/react'
-import { Phone, MessageCircle } from 'lucide-react'
+import { Phone } from 'lucide-react'
+import { FaWhatsapp } from 'react-icons/fa6'
+
 import { site } from '@/lib/data'
+
+const whatsappNumber = site.phone.replace(/\D/g, '')
+const emergencyNumber = site.emergencyPhone.replace(/\D/g, '')
 
 export function FloatingActions() {
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-3">
+    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center gap-4">
+      {/* WhatsApp */}
       <motion.a
-        href={`https://wa.me/${site.phone.replace(/[^0-9]/g, '')}`}
+        href={`https://wa.me/${whatsappNumber}`}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.6, type: 'spring', stiffness: 260 }}
-        whileHover={{ scale: 1.1 }}
+        aria-label="Chat with us on WhatsApp"
+        title="Chat on WhatsApp"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 0.3,
+          type: 'spring',
+          stiffness: 300,
+          damping: 18,
+        }}
+        whileHover={{
+          scale: 1.1,
+          y: -2,
+        }}
         whileTap={{ scale: 0.95 }}
-        className="flex size-12 items-center justify-center rounded-full bg-[--color-brand-green] text-white shadow-lg"
+        className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-shadow hover:shadow-2xl"
       >
-        <MessageCircle className="size-6" />
+        <FaWhatsapp className="h-7 w-7" />
       </motion.a>
+
+      {/* Emergency Call */}
       <motion.a
-        href={`tel:${site.emergencyPhone.replace(/\s/g, '')}`}
-        aria-label="Call emergency line"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 0.7, type: 'spring', stiffness: 260 }}
-        whileHover={{ scale: 1.1 }}
+        href={`tel:${emergencyNumber}`}
+        aria-label="Call our emergency line"
+        title="Emergency Call"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          delay: 0.45,
+          type: 'spring',
+          stiffness: 300,
+          damping: 18,
+        }}
+        whileHover={{
+          scale: 1.1,
+          y: -2,
+        }}
         whileTap={{ scale: 0.95 }}
-        className="relative flex size-12 items-center justify-center rounded-full bg-primary text-white shadow-lg"
+        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-primary text-white shadow-xl transition-shadow hover:shadow-2xl"
       >
-        <span className="absolute inset-0 animate-ping rounded-full bg-primary/40" />
-        <Phone className="relative size-5" />
+        <span className="pointer-events-none absolute inset-0 rounded-full bg-primary/30 animate-ping" />
+        <Phone className="relative z-10 h-6 w-6" />
       </motion.a>
     </div>
   )
