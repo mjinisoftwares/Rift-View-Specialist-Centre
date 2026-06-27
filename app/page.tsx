@@ -3,6 +3,7 @@ import { StatsSection } from '@/components/home/stats-section'
 import { ServicesPreview } from '@/components/home/services-preview'
 import { WhyChoose } from '@/components/home/why-choose'
 import { SpecialistsPreview } from '@/components/home/specialists-preview'
+import { Facilities } from '@/components/home/facilities'
 import { SectionHeading } from '@/components/section-heading'
 import { TestimonialsCarousel } from '@/components/testimonials-carousel'
 import { CtaBand } from '@/components/cta-band'
@@ -21,6 +22,7 @@ export default function HomePage() {
        <CtaBand />
       <WhyChoose />
       <SpecialistsPreview />
+      <Facilities />
       <section className="bg-background py-20">
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeading
