@@ -136,6 +136,54 @@ export const specialists: Specialist[] = [
       {name: 'University of Nairobi', href: 'https://opthalmology.uonbi.ac.ke/latest-news/dr-uba-hemed-and-dr-teresia-chege-awarded '},
     ]
   },
+   {
+    slug: 'Dr-Daniel-Katambo',
+    name: 'Dr. Daniel Katambo',
+    title: 'Obstetrician & Gynaecologist',
+    department: 'Maternity Department',
+    image: '/images/Dr-Daniel-Katambo.webp',
+    bio: "Dr. Daniel K. Katambo (MBChB, MPH, MRCP UK) is a Consultant Physician specializing in Type 2 diabetes, obesity management, and lifestyle medicine. Founder of Kenya's first dedicated diabetes remission center, he has extensive expertise in diabetes prevention, therapeutic nutrition, metabolic health, and evidence-based lifestyle interventions, helping patients achieve long-term disease control and improved quality of life.",
+    experience: '12+ years',
+    education: ['MBChB: Bachelor of Medicine and Surgery from the University of Nairobi (2006).','MPH: Masters in Public Health from the University of Nairobi (2013).', 'MRCP: Member of the Royal College of Physicians, London, UK (2019).'],
+    languages: ['English', 'Swahili' ],
+    specialties: ['Type 2 diabetes', 'Obesity management', 'Weight Loss Management', 'Diabetes prevention', 'Therapeutic nutrition', 'Metabolic health', 'Evidence-based lifestyle interventions'],
+    socials: [
+      {name: 'Afyacode', href: "https://afyacode.com/doctors/dr-daniel-katambo/#:~:text=He%20graduated%20with%20a%20Bachelor's,of%20Physicians%20(MRCP%20London%20UK)."},
+      {name: 'Diabetes Africa', href: 'https://diabetesafrica.org/profile/dr-daniel-katambo-kiningu/#:~:text=Dr.%20Daniel%20K.%20Kiningu%20is,2%20diabetes%20and%20weight%20loss.'},
+      {name: 'LinkedIn', href: 'https://www.linkedin.com/in/dr-daniel-k-kiningu?originalSubdomain=ke'},
+    ]
+  },
+  {
+    slug: 'Dr-Milquinta-Atieno',
+    name: 'Dr. Milquinta Atieno',
+    title: 'Consultant Physician',
+    department: 'General Medicine Department',
+    image: '/images/Dr-Milquinta-Atieno.webp',
+    bio: "",
+    experience: '',
+    education: [],
+    languages: [],
+    specialties: [],
+    socials: [
+         ]
+  },
+
+  {
+    slug: 'Lewis-Gitau',
+    name: 'Lewis Gitau',
+    title: 'Clinician - Cancer Care',
+    department: 'Cancer Care Department',
+    image: '/images/Lewis-Gitau.webp',
+    bio: "Lewis Gitau is a Registered Clinical Officer with a Diploma in Clinical Medicine and Surgery from KMTC Murang'a. He provides primary healthcare services, including diagnosis, treatment, and patient management, and has practiced in the Juja and Naivasha regions of Kenya.",
+    experience: '5+ years',
+    education: ['Diploma in Clinical Medicine and Surgery from KMTC Murang\'a'],
+    languages: ['English', 'Swahili',],
+    specialties: ['Primary healthcare services', 'Diagnosis', 'Treatment', 'Patient management'],
+    socials: [
+      {name: 'LinkedIn', href: 'https://www.linkedin.com/in/lewis-gitau-7982822ba/'},
+    ]
+  },
+
 ]
 
 export type Testimonial = {
