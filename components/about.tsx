@@ -57,7 +57,7 @@ const About3 = ({ className }: AboutProps) => {
     <section className={cn("py-20 ", className)}>
       <div className="container px-6 md:px-12 mx-auto">
         {/* Commitment to Excellence Header */}
-        <div className="mb-16 flex flex-col gap-6 lg:w-3/4 mx-auto text-center">
+        <div className="mb-16 flex flex-col gap-6 lg:w-3/4 mx-auto text-left md:text-center">
           <h1 className="text-4xl font-bold tracking-tight lg:text-6xl text-primary">
             Our <span className="text-accent">Commitment</span> to Excellence
           </h1>
