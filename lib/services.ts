@@ -53,45 +53,81 @@ export const services: Service[] = [
     ]
   },
   {
-    slug: 'diagnostic-department',
-    title: 'Diagnostic Department',
+    slug: 'radiology-department',
+    title: 'Radiology Department',
     category: 'Diagnostics',
     icon: 'ScanLine',
-    excerpt: 'Accurate diagnosis combining advanced medical imaging, laboratory testing, and specialist interpretation.',
-    description: "Accurate diagnosis is the cornerstone of effective treatment. Our Diagnostic Services department combines advanced imaging, laboratory testing, and specialist expertise to deliver precise results you can trust. With cutting-edge equipment and highly trained professionals, we ensure clarity and confidence in every diagnosis.",
+    excerpt: 'Advanced medical imaging including X-Ray, MRI, CT scans, ultrasounds, and mammography for precise diagnosis.',
+    description: "Our Radiology Department offers state-of-the-art medical imaging and diagnostic testing to help detect, diagnose, and monitor conditions. Equipped with advanced technology and staffed by expert radiologists, sonographers, and cardiologists, we ensure the highest standards of safety, accuracy, and patient comfort. From routine X-rays and ultrasounds to high-resolution MRI and CT scans, we provide the detailed internal views your doctor needs to create your treatment plan.",
     highlights: [
       {
-        title: 'Medical Imaging',
-        content: 'From X-rays and ultrasounds to advanced CT and MRI scans, our imaging services provide detailed insights into your health. Each test is performed in a safe, comfortable setting, and results are interpreted by expert radiologists.'
+        title: 'Advanced MRI & CT Scans',
+        content: 'Our high-resolution MRI and CT imaging technologies provide detailed cross-sectional views of internal organs, brain, spine, and musculoskeletal structures, crucial for complex diagnoses.'
       },
       {
-        title: 'Mammography',
-        content: 'Early detection saves lives. Our mammography services provide clear, detailed breast imaging for screening and diagnosis, with the utmost sensitivity and care.'
+        title: 'X-Ray & Ultrasound Imaging',
+        content: 'We offer routine digital X-rays and comprehensive ultrasound studies (including obstetric, abdominal, and vascular scans) performed in a safe, professional, and comfortable environment.'
       },
       {
-        title: 'Cardiac & Neurological Testing',
-        content: 'We offer electrocardiograms (ECG) for heart function assessment and electroencephalograms (EEG) for neurological evaluation, helping detect conditions early.'
+        title: 'Mammography & Breast Screening',
+        content: 'Early detection saves lives. Our dedicated mammography services provide high-quality breast imaging for screening and diagnostic evaluations, conducted with sensitivity and care.'
       },
       {
-        title: 'Comprehensive Laboratory Services',
-        content: 'Our laboratory covers everything from routine blood work to advanced pathology tests. Each result is processed with precision, accuracy, and speed, ensuring your doctor has the answers needed for timely treatment.'
+        title: 'Cardiac & Neurological testing (ECG/EEG)',
+        content: 'We provide specialized physiological assessments, including Electrocardiograms (ECG) for heart health and Electroencephalograms (EEG) to monitor neurological activity, helping identify issues early.'
       }
     ],
     conditions: [
       'Internal Trauma',
       'Tumors and Lesions',
-      'Cardiac Arrhythmias',
-      'Neurological Disorders',
-      'Infections and Pathology'
+      'Bone Fractures & Dislocations',
+      'Spinal & Joint Pain',
+      'Cardiac Arrhythmias & Heart Issues',
+      'Neurological Disorders'
     ],
     images: [
-        { src: '/images/lab-rift-view-specialist-center.webp', alt: 'Lab equipment at Rift View Specialist Centre' },
       { src: '/images/riftview-mri-equipment.webp', alt: 'MRI equipment at Rift View Specialist Centre' },
+      { src: '/images/xray.webp', alt: 'X-ray imaging at Rift View Specialist Centre' }
+    ]
+  },
+  {
+    slug: 'laboratory-services',
+    title: 'Laboratory Services',
+    category: 'Diagnostics',
+    icon: 'Microscope',
+    excerpt: 'Comprehensive clinical laboratory testing and pathology services for accurate and timely medical diagnosis.',
+    description: "Our Laboratory Services department offers a complete range of diagnostic testing and clinical pathology. Utilizing advanced, automated laboratory analyzers and adhering to strict international quality standards, our licensed laboratory scientists provide highly accurate, timely, and confidential results. From routine blood screenings to specialized microbiological and chemical pathology investigations, we deliver critical data for effective diagnosis and patient care.",
+    highlights: [
+      {
+        title: 'Hematology & Blood Profiles',
+        content: 'Routine and specialized blood tests, including Full Blood Count (FBC) and coagulation profiles, to detect anemia, infections, clotting disorders, and blood-borne conditions.'
+      },
+      {
+        title: 'Clinical Biochemistry',
+        content: 'Automated testing of blood and bodily fluids to check liver function, kidney function, blood sugar control, lipid levels, thyroid function, and cardiac markers.'
+      },
+      {
+        title: 'Microbiology & Immunology',
+        content: 'Culturing and identifying bacterial, fungal, or viral infections to guide targeted antibiotic and antimicrobial treatment, along with specialized antibody screenings.'
+      },
+      {
+        title: 'Urinalysis & Pathology Diagnostics',
+        content: 'Rapid analysis of urine, stool, and fluid samples for general health check-ups, metabolic screenings, digestive health evaluation, and infectious disease detection.'
+      }
+    ],
+    conditions: [
+      'Infections and Pathology',
+      'Hormonal & Metabolic Imbalances',
+      'Anemia & Blood Disorders',
+      'Liver & Kidney Diseases',
+      'Bacterial & Viral Infections'
+    ],
+    images: [
+      { src: '/images/lab-rift-view-specialist-center.webp', alt: 'Lab equipment at Rift View Specialist Centre' },
       { src: '/images/lab-equipments-rift-view-specialist-center.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
       { src: '/images/lab-equipments-rift-view-specialist-center-2.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
-      { src: '/images/lab-equipments-rift-view-specialist-center-3.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' },
-     { src: '/images/xray.webp', alt: 'X-ray imaging at Rift View Specialist Centre' },
-   ]
+      { src: '/images/lab-equipments-rift-view-specialist-center-3.webp', alt: 'Laboratory equipment at Rift View Specialist Centre' }
+    ]
   },
   {
     slug: 'ophthalmology',

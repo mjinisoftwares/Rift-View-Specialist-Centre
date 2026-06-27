@@ -45,7 +45,8 @@ export type Specialist = {
 export const specialistDepartments = [
   'All',
   'OutPatient Department (OPD)',
-  'Diagnostic Department',
+  'Radiology Department',
+  'Laboratory Services',
   'Ophthalmology (Eye Care) Department',
   'Dental Unit',
   'ENT and Audiology Department',
