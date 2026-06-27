@@ -63,6 +63,20 @@ export const specialistDepartments = [
 
 export const specialists: Specialist[] = [
   {
+    slug: 'dr-daniel-somba',
+    name: 'Dr. Daniel Somba',
+    title: 'Chairman',
+    department: 'Chairman',
+    image: '/images/dr-daniel-somba-chairman.webp',
+    bio: "Dr. Daniel Nthakyo Ngayai Somba is a Consultant Radiologist with over 10 years of experience in diagnostic imaging. He holds an MBChB and MMed in Diagnostic Imaging and Radiation Medicine from the University of Nairobi and is a member of the Kenya Association of Radiologists (KAR). He is the Managing Director of Machakos Imaging Centre, CEO of Machakos Doctors Plaza, Chairman of Rift View Specialist Centre in Naivasha, and a consultant radiologist at The Mara Specialist Hospital, where he advances access to high-quality diagnostic imaging services.",
+    experience: '10+ years',
+    education: ['MBChB – University of Nairobi (2006)','MPH – University of Nairobi (2013)','MRCP – Royal College of Physicians, London, UK (2019)',],
+    languages: ['English', 'Swahili' ],
+    specialties: ['Diagnostic Imaging', 'Radiation Medicine', 'Radiology'],
+    socials: [
+    ]
+  },
+  {
     slug: 'Dr-Jonah-Manjari-Rift-View-Specialist-Center',
     name: 'Dr. Jonah Manjari',
     title: 'Consultant Ear, Nose, and Throat (ENT) surgeon',
