@@ -16,11 +16,11 @@ export function SectionHeading({
     <Reveal
       className={cn(
         'max-w-4xl',
-        align === 'center' ? 'mx-auto text-center' : 'text-left',
+        align === 'center' ? 'md:mx-auto md:text-center text-left' : 'text-left',
       )}
     >
       {eyebrow && (
-        <span className="inline-block rounded-full px-4 py-1 text-md font-medium uppercase tracking-wider text-secondary">
+        <span className="inline-block rounded-full px-0 md:px-4 py-1 text-md font-medium uppercase tracking-wider text-secondary">
           {eyebrow}
         </span>
       )}

@@ -42,7 +42,7 @@ export function SiteHeader() {
     href === '/' ? pathname === '/' : pathname.startsWith(href)
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="sticky top-0 z-50 mx-auto">
       {/* Top bar */}
       <div className="hidden bg-primary text-primary-foreground md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12 py-1 text-xs">

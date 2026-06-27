@@ -13,7 +13,7 @@ export type Service = {
   images: { src: string; alt: string }[]
 }
 
-export const services: Service[] = [
+export const services: Service[] = [  
   {
     slug: 'outpatient-department',
     title: 'OutPatient Department (OPD)',

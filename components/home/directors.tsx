@@ -7,7 +7,7 @@ import { SectionHeading } from '../section-heading'
 export function Directors() {
   return (
     <section className="content-container max-w-7xl bg-secondary/5 px-6 py-20 md:px-12">
-      <div className="mx-auto flex flex-col items-center text-center">
+      <div className="mx-auto flex flex-col items-start">
         <SectionHeading
           title="Our Directors"
           align="center"
@@ -32,7 +32,7 @@ export function Directors() {
             />
           </div>
 
-          <div className="mx-auto mt-8 max-w-3xl text-center">
+          <div className="mx-auto mt-8 max-w-3xl md:text-center">
             <h3 className="text-2xl font-bold text-primary md:text-3xl">
               Quality Care and Governance
             </h3>

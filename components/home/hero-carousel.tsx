@@ -13,7 +13,7 @@ const slides = [
     titleLead: 'Specialist',
     titleAccent: 'Healthcare',
     titleTail: 'in Naivasha',
-    text: "At Rift View Specialist Centre, we deliver comprehensive and compassionate care for cancer patients. Our multidisciplinary team creates personalized, holistic treatment plans to meet each patient&rsquo;s unique needs.",
+    text: 'Rift View Specialist Centre provides cancer care through a multidisciplinary team delivering personalized, evidence-based treatment plans in Naivasha.',
   },
   {
     image: '/images/medicl-staff-treating-patient-in-community-o.webp',
@@ -21,7 +21,7 @@ const slides = [
     titleLead: 'Compassionate',
     titleAccent: 'Care',
     titleTail: 'for the community',
-    text: 'From paediatrics to chronic disease management, our experienced consultants put your wellbeing at the heart of everything we do.',
+    text: 'From paediatrics to chronic disease management, our specialist consultants deliver patient-centred care tailored to every community member.',
   },
   {
     image: '/images/two-medical-staff.webp  ',
@@ -29,23 +29,34 @@ const slides = [
     titleLead: 'Medical',
     titleAccent: 'Specialists',
     titleTail: 'you can trust',
-    text: 'A multidisciplinary team of over 40 specialists working together to provide quality and compassionate healthcare close to home.',
+    text: 'Over 40 medical specialists collaborate across disciplines to deliver consistent, high-quality healthcare conveniently close to home in Naivasha.',
   },
-  {
-    image: '/images/riftview-mri-equipment.webp',
-    alt: 'Doctor standing next to MRI machine at Rift View Specialist Center Naivasha',
-    titleLead: 'Advanced',
-    titleAccent: 'Diagnostics',
-    titleTail: 'for accurate results',
-    text: 'Modern laboratory and imaging facilities deliver fast, reliable results to guide effective treatment decisions.',
-  },
+ {
+  image: '/images/riftview-mri-equipment.webp',
+  alt: 'Doctor standing beside a modern MRI scanner at Rift View Specialist Centre, Naivasha',
+  titleLead: 'Modern MRI & CT ',
+  titleAccent: 'Imaging',
+  titleTail: 'Services',
+  text: 'We provide high-quality MRI & CT imaging using modern technology that helps our specialists diagnose conditions early and develop effective, personalized treatment plans.',
+},
+
+{
+  image: '/images/lab-equipments-rift-view-specialist-center-2.webp',
+  alt: 'Modern laboratory equipment at Rift View Specialist Centre, Naivasha',
+  titleLead: 'Comprehensive',
+  titleAccent: 'Laboratory',
+  titleTail: 'Diagnostics',
+  text: 'Using advanced laboratory technology and rigorous quality standards, we provide precise diagnostic testing with timely results to help our specialists deliver exceptional patient care.',
+},
+
+
   {
     image: '/images/examination-room-with-medical-equipments.webp',
     alt: 'Medical Equipment in examination room at Rift View Specialist Center Naivasha',
     titleLead: 'Quality & Affordable',
     titleAccent: 'Healthcare',
     titleTail: 'for all',
-    text: 'We believe that quality healthcare should be accessible to everyone in our community. That’s why we’re committed to providing comprehensive, compassionate, and affordable medical services that meet the diverse needs of our patients.',
+    text: 'We provide comprehensive, affordable specialist medical services designed to meet the diverse healthcare needs of every patient in our community.',
   },
 ]
 
@@ -63,13 +74,13 @@ export function HeroCarousel() {
   const slide = slides[index]
 
   return (
-    <section className="relative overflow-hidden bg-background min-h-[80vh]">
+    <section className="mt-12 md:mt-0 relative overflow-hidden bg-background min-h-[95vh]">
       <div
         className="pointer-events-none absolute right-0 top-0 size-136 translate-x-1/3 -translate-y-1/3 rounded-full bg-[--color-brand-sky]/10"
         aria-hidden="true"
       />
-      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 md:px-12 py-12 lg:grid-cols-2 text-center lg:text-left">
-        <div className="relative min-h-80 flex flex-col items-center lg:items-start">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 md:px-12 py-12 lg:grid-cols-2 text-left">
+        <div className="relative flex flex-col items-start">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -77,9 +88,9 @@ export function HeroCarousel() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -16 }}
               transition={{ duration: 0.5 }}
-              className="flex flex-col items-center lg:items-start"
+              className="flex flex-col items-start"
             >
-              <h1 className="text-balance font-heading text-4xl font-bold leading-[1.2] tracking-tight text-primary sm:text-5xl">
+              <h1 className="text-balance font-heading text-4xl font-bold leading-[1.2] tracking-tight text-primary md:text-5xl">
                 {slide.titleLead}{' '}
                 <span className="text-accent">
                   {slide.titleAccent}
@@ -92,7 +103,7 @@ export function HeroCarousel() {
             </motion.div>
           </AnimatePresence>
 
-          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">          
+          <div className="mt-8 flex flex-wrap justify-start gap-4">
             <CtaButton href="/services" size="md" variant="secondary">
               Our Services
             </CtaButton>
@@ -101,7 +112,7 @@ export function HeroCarousel() {
             </CtaButton>
           </div>
 
-          <div className="mt-8 flex items-center justify-center lg:justify-start gap-2">
+          <div className="mt-8 flex items-center justify-start gap-2">
             {slides.map((_, i) => (
               <button
                 key={i}

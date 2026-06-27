@@ -73,7 +73,7 @@ export default function PartnersSection() {
   return (
     <section className="py-20 bg-accent/10 overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
+        <div className="mx-auto mb-12 max-w-3xl md:text-center">
           <span className="text-secondary font-semibold uppercase tracking-wider">
             Trusted Partnerships
           </span>
