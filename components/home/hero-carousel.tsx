@@ -13,7 +13,7 @@ const slides = [
     titleLead: 'Specialist',
     titleAccent: 'Healthcare',
     titleTail: 'in Naivasha',
-    text: 'Rift View Specialist Centre provides cancer care through a multidisciplinary team delivering personalized, evidence-based treatment plans in Naivasha.',
+    text: 'We provide quality and accessible specialist healthcare services to the people of Naivasha & Nakuru County at large.',
   },
   {
     image: '/images/medicl-staff-treating-patient-in-community-o.webp',
