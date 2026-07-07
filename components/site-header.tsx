@@ -16,7 +16,6 @@ const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services', isDropdown: true },
-  { label: 'Specialists', href: '/specialists' },
   { label: 'Contact', href: '/contact' },
 ]
 
@@ -152,7 +151,10 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <CtaButton href="/appointments" className="hidden sm:inline-flex" variant="accent">
+                <CtaButton href="/specialists" className="hidden sm:inline-flex hover:bg-primary shadow-lg hover:text-white" variant="secondary">
+              Our Specialists
+            </CtaButton>
+            <CtaButton href="/contact" className="hidden sm:inline-flex hover:bg-primary hover:text-white" variant="accent">
               Book Appointment
             </CtaButton>
             <button
@@ -242,7 +244,10 @@ export function SiteHeader() {
                   </Link>
                 )
               })}
-              <CtaButton href="/appointments" className="mt-2 w-full">
+                 <CtaButton href="/specialists" className="mt-2 w-full hover:bg-primary hover:text-white" variant="secondary">
+              Our Specialists
+            </CtaButton>
+              <CtaButton href="/contact" className="mt-2 w-full hover:bg-primary hover:text-white" variant='accent'>
                 Book Appointment
               </CtaButton>
             </div>

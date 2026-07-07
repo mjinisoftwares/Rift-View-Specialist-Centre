@@ -13,8 +13,7 @@ const slides = [
     titleLead: 'Specialist',
     titleAccent: 'Healthcare',
     titleTail: 'in Naivasha',
-    text: 'We provide quality and accessible specialist healthcare services to the people of Naivasha & Nakuru County at large.',
-  },
+   text: 'We provide quality, accessible and patient-centred specialist healthcare services to the people of Naivasha, delivering compassionate care through experienced specialists, modern technology, and evidence-based treatment.'  },
   {
     image: '/images/medicl-staff-treating-patient-in-community-o.webp',
     alt: 'Outreach Program treating community members in Naivasha',
@@ -90,7 +89,7 @@ export function HeroCarousel() {
               transition={{ duration: 0.5 }}
               className="flex flex-col items-start"
             >
-              <h1 className="text-balance font-heading text-4xl font-bold leading-[1.2] tracking-tight text-primary md:text-5xl">
+              <h1 className="text-balance font-heading text-4xl font-bold leading-[1.2] tracking-tight text-primary md:text-5xl  lg:mt-12">
                 {slide.titleLead}{' '}
                 <span className="text-accent">
                   {slide.titleAccent}
@@ -103,12 +102,12 @@ export function HeroCarousel() {
             </motion.div>
           </AnimatePresence>
 
-          <div className="mt-8 flex flex-wrap justify-start gap-4">
+          <div className="mt-12 flex flex-wrap justify-start gap-4">
             <CtaButton href="/services" size="md" variant="secondary">
               Our Services
             </CtaButton>
-            <CtaButton href="/about" size="md" variant="accent">
-            About Us
+            <CtaButton href="/specialists" size="md" variant="accent">
+           Our Specialists
             </CtaButton>
           </div>
 
