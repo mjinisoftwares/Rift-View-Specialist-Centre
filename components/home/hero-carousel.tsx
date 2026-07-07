@@ -103,10 +103,10 @@ export function HeroCarousel() {
           </AnimatePresence>
 
           <div className="mt-12 flex flex-wrap justify-start gap-4">
-            <CtaButton href="/services" size="md" variant="secondary">
+            <CtaButton href="/services" size="md" variant="primary" className='hover:bg-secondary'>
               Our Services
             </CtaButton>
-            <CtaButton href="/specialists" size="md" variant="accent">
+            <CtaButton href="/specialists" size="md" variant="outline" className='hover:bg-primary/80 hover:text-white'>
            Our Specialists
             </CtaButton>
           </div>

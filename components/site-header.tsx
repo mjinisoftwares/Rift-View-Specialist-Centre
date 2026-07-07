@@ -83,7 +83,7 @@ export function SiteHeader() {
           scrolled && 'shadow-lg',
         )}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12 py-1.5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12 py-2">
           <Logo />
 
           <nav className="hidden items-center gap-1 lg:flex">
