@@ -33,11 +33,11 @@ export async function generateMetadata({
       type: 'website',
       title: `${service.title} in Naivasha | Rift View Specialist Centre`,
       description: service.excerpt,
-      url: `https://riftviewspecialist.co.ke/services/${service.slug}`,
+      url: `https://www.riftviewspecialistcentre.co.ke/services/${service.slug}`,
       siteName: 'Rift View Specialist Centre',
       images: [
         {
-          url: `https://riftviewspecialist.co.ke${ogImage}`,
+          url: `https://www.riftviewspecialistcentre.co.ke${ogImage}`,
           width: 1200,
           height: 630,
           alt: service.title,
@@ -48,7 +48,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: `${service.title} in Naivasha | Rift View Specialist Centre`,
       description: service.excerpt,
-      images: [`https://riftviewspecialist.co.ke${ogImage}`],
+      images: [`https://www.riftviewspecialistcentre.co.ke${ogImage}`],
     },
   }
 }
@@ -79,7 +79,7 @@ export default async function ServiceDetailPage({
     hospitalAffiliation: {
       '@type': 'Hospital',
       name: 'Rift View Specialist Centre',
-      url: 'https://riftviewspecialist.co.ke',
+      url: 'https://www.riftviewspecialistcentre.co.ke',
     },
     location: {
       '@type': 'Place',

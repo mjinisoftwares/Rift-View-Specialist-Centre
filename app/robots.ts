@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://riftviewspecialist.co.ke/sitemap.xml',
+    sitemap: 'https://www.riftviewspecialistcentre.co.ke/sitemap.xml',
   }
 }

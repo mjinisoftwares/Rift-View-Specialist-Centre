@@ -68,11 +68,11 @@ export async function generateMetadata({
       type: 'profile',
       title: `${specialist.name} — ${specialist.title}`,
       description: specialist.bio,
-      url: `https://riftviewspecialist.co.ke/specialists/${specialist.slug}`,
+      url: `https://www.riftviewspecialistcentre.co.ke/specialists/${specialist.slug}`,
       siteName: 'Rift View Specialist Centre',
       images: [
         {
-          url: `https://riftviewspecialist.co.ke${specialist.image}`,
+          url: `https://www.riftviewspecialistcentre.co.ke${specialist.image}`,
           width: 800,
           height: 800,
           alt: specialist.name,
@@ -83,7 +83,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: `${specialist.name} — ${specialist.title}`,
       description: specialist.bio,
-      images: [`https://riftviewspecialist.co.ke${specialist.image}`],
+      images: [`https://www.riftviewspecialistcentre.co.ke${specialist.image}`],
     },
   }
 }
@@ -112,13 +112,13 @@ export default async function SpecialistDetailPage({
     '@context': 'https://schema.org',
     '@type': 'Physician',
     name: specialist.name,
-    image: `https://riftviewspecialist.co.ke${specialist.image}`,
+    image: `https://www.riftviewspecialistcentre.co.ke${specialist.image}`,
     description: specialist.bio,
     medicalSpecialty: specialist.specialties.map((s) => ({
       '@type': 'MedicalSpecialty',
       name: s,
     })),
-    url: `https://riftviewspecialist.co.ke/specialists/${specialist.slug}`,
+    url: `https://www.riftviewspecialistcentre.co.ke/specialists/${specialist.slug}`,
     hospitalAffiliation: {
       '@type': 'Hospital',
       name: 'Rift View Specialist Centre',

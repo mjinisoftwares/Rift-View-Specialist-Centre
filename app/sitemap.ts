@@ -3,7 +3,7 @@ import { specialists } from '@/lib/data'
 import { services } from '@/lib/services'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://riftviewspecialist.co.ke'
+  const baseUrl = 'https://www.riftviewspecialistcentre.co.ke'
 
   // Define static routes
   const staticRoutes = [

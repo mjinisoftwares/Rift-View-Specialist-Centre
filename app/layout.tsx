@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://riftviewspecialist.co.ke'),
+  metadataBase: new URL('https://www.riftviewspecialistcentre.co.ke'),
   title: {
     default:
       'RiftView Specialist Centre | Specialist Healthcare in Naivasha, Nakuru County',
@@ -81,8 +81,8 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'MedicalOrganization',
               name: 'RiftView Specialist Centre',
-              url: 'https://riftviewspecialist.co.ke',
-              logo: 'https://riftviewspecialist.co.ke/logo.png',
+              url: 'https://www.riftviewspecialistcentre.co.ke',
+              logo: 'https://www.riftviewspecialistcentre.co.ke/logo.png',
               contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+254-719-225227',
