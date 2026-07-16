@@ -132,6 +132,7 @@ export const specialists: Specialist[] = [
       {name: 'Facebook', href: 'https://www.facebook.com/carolinemutoko/videos/796979648445816/'},
       {name: 'YouTube', href: 'https://www.youtube.com/watch?v=E7RfdVv5Vl0'},
       {name: 'Royal Smiles Website', href: 'https://www.royalsmilesclinic.com/team#:~:text=Dr.%20Gladys%20Maina,of%20Nairobi)%2C%20Invisalign%20Accredited%20Provider&text=Gladys%20Maina%20is%20one%20of,Royal%20Smiles%20Dental%20Clinic%20Ltd.'},
+      {name: 'The Dentist LTD', href: 'https://thedentistltd.co.ke/'}
     ]
   },
   {
