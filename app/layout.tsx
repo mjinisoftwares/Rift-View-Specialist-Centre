@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://www.riftviewspecialistcentre.co.ke'),
   title: {
     default:
-      'RiftView Specialist Centre | Specialist Healthcare in Naivasha, Nakuru County',
+      'RiftView Specialist Centre | Specialist Healthcare in Naivasha | Specialist in Naivasha',
     template: '%s | RiftView Specialist Centre',
   },
   description:
