@@ -28,9 +28,9 @@ export const metadata: Metadata = {
     'RiftView Specialist Centre offers comprehensive specialist healthcare in Naivasha, Nakuru County, Kenya. Book appointments with experienced consultants across cardiology, paediatrics, surgery, diagnostics and more.',
   keywords: [
     'specialist hospital Naivasha',
-    'healthcare Nakuru County',
+    'Specialist in Naivasha',
     'RiftView Specialist Centre',
-    'doctors Naivasha',
+    'Specialists in Naivasha',
     'medical centre Kenya',
     'book appointment Naivasha hospital',
   ],
